@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>SIPA ALLOWED TOOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}">
+
+  </head>
+
+
+  <style>
+
+
+   h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    }
+
+   h2 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    }
+
+   footer {
+    color: black;
+    font-family: verdana;
+    font-size: 120%;
+    }
+
+
+   h3 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    }
+
+   footer {
+    color: black;
+    font-family: verdana;
+    font-size: 120%;
+    }
+
+
+  </style>
+
+
+  <body>
+        <h1>Add New IP to SIPA Allowed:</h1>
+    <form action="{{ url_for('sipa_form') }}" method="POST">
+        <input type="text" class="form-control" placeholder="Enter IP Address to add to SIPA Allow:" name="sipa">
+        <input type="submit" name="commit" value="Add IP">
+    </form>
+
+      <h2>Delete IP to SIPA Allowed:</h2>
+    <form action="{{ url_for('sipa_form') }}" method="POST">
+        <input type="text" class="form-control" placeholder="Enter IP Address to remove from SIPA Allow:" name="sipa_delete">
+        <input type="submit" name="delete" value="Delete IP">
+
+    </form>
+
+
+        <h3> Search IP in Sipa Allowed List</h3>
+        <form action="{{url_for('sipa_form') }}" method="POST">
+            <input type="text" class="form-control" placeholder="Enter IP For Search in Sipa-Allowed:"
+                   name="sipa_search">
+            <input type="submit" name="search" value="Search IP">
+
+        </form>
+
+    <br>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+        <footer>By Ramon Rivera Llavona - NEO Data</footer>
+
+  </body>
+
+</html>

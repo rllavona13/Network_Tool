@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Main" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,38 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sipa_allowed_web.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sipa_allowed_web.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Main">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="74">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#138#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sipa_allowed_commit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -63,8 +41,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Main" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" />
       </list>
     </option>
   </component>
@@ -160,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531759254992</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="edited">
+      <created>1531759682379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531759682379</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -221,13 +206,17 @@
     <MESSAGE value="Fix headers" />
     <MESSAGE value="Edit template" />
     <MESSAGE value="Delete __COPYTIGHT__" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete __COPYTIGHT__" />
+    <MESSAGE value="edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#138#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -238,9 +227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -250,17 +236,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Main">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#138#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

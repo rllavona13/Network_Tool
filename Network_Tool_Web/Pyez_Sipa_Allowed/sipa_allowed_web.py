@@ -5,6 +5,7 @@ By Ramon Rivera Llavona
 """
 __VERSION__ = 'Beta 1.0.0'
 __AUTHOR_ = 'Ramon Rivera rllavona13@me.com'
+__COPYRIGHT__ = 'Ramon Rivera'
 
 from flask import Flask, request, render_template
 from jnpr.junos import Device

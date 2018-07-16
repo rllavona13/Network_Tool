@@ -38,6 +38,7 @@ def sipa_form():
         cfg.commit()
         JunosDevices.dev.close()  # call the object dev in class JunosDevices and close the connection
         return render_template("sipa_allowed_commit.html", compares=compares)  # After the loop it show the new config.
+
     # if delete(html button) is pressed it run the variable to the cfg.load() and run the delete set command
     elif "delete" in request.form:
 

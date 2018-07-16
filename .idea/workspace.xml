@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Git.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sipa_allowed_web.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sipa_allowed_web.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="390">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -34,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sipa_allowed_commit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sipa_allowed_commit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -52,6 +48,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" />
       </list>
     </option>
   </component>
@@ -124,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1531757954945</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fix headers">
+      <created>1531758035690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531758035690</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -154,11 +159,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix headers" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -167,10 +176,10 @@
         <state relative-caret-position="-360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="390">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
         </state>
       </provider>
     </entry>

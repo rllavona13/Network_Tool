@@ -1,9 +1,3 @@
-"""
-
-By Ramon Rivera Llavona
-
-"""
-
 from flask import Flask, request, render_template
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
@@ -49,10 +43,9 @@ def sipa_form():
         JunosDevices.dev.close()   # call the object dev in class JunosDevices and close the connection
         return render_template("sipa_allowed_commit.html", compares=compares)  # After the loop it show the new config.
 
-    elif "search" in request.form:
+    elif "search" in request.form:  # Verify why the | match doesnt work, parse entire config of Juniper
         JunosDevices.dev.open()
-        data = JunosDevices.dev.cli('show configuration | display set | match sipa-allowed | match '
-                                    '' +
+        data = JunosDevices.dev.cli('show configuration | display set | match sipa-allowed | match ' +
                                     (request.form['sipa_search']), format='set')
         JunosDevices.dev.close()
         return render_template("show_sipa.html", data=data)

@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, url_for, request
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
 import json
+import mysql.connector
 
 
 app = Flask(__name__)
@@ -26,6 +27,25 @@ def block_form():
             compares.append([hosts, cfg.diff().strip()])
             cfg.commit()
             dev.close()
+
+            blocked_ip = request.form['attacker']
+
+            sql_connector = mysql.connector.connect(user='python',
+                                                    password='yzh8RB0Bcw1VivO3',
+                                                    host='localhost',
+                                                    database='BlockedIP')
+
+            cursor = sql_connector.cursor()
+
+            add_ip = ("INSERT INTO blocked"
+                            "(ip)"
+                            "VALUES ('%s')" % blocked_ip)
+
+            cursor.execute(add_ip)
+            sql_connector.commit()
+            cursor.close()
+            sql_connector.close()
+
         return render_template("attacker_commit.html", compares=compares)
 
     elif "delete" in request.form:

@@ -44,7 +44,6 @@ def sipa_form():
         return render_template("sipa_allowed_commit.html", compares=compares)
 
     elif "delete" in request.form:
-
         compares = []
         JunosDevices.dev.open()
         cfg = Config(JunosDevices.dev, mode='private')

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" afterDir="false" />
-    </list>
+    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +15,7 @@
       <file leaf-file-name="sipa_allowed_web.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-93">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -229,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531771766214</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix in the Loops, edit the style of the code, and add the feature to search IP in sipa-allowed which is buggy because junos pyez doesn't support the | match so i had to improvise.">
+      <created>1531791261753</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531791261753</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -294,7 +297,8 @@
     <MESSAGE value="&#10;edited" />
     <MESSAGE value="Edited some if-elif-else loop." />
     <MESSAGE value="new static folders for bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="new static folders for bootstrap" />
+    <MESSAGE value="Fix in the Loops, edit the style of the code, and add the feature to search IP in sipa-allowed which is buggy because junos pyez doesn't support the | match so i had to improvise." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix in the Loops, edit the style of the code, and add the feature to search IP in sipa-allowed which is buggy because junos pyez doesn't support the | match so i had to improvise." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
@@ -355,7 +359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="-93">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />

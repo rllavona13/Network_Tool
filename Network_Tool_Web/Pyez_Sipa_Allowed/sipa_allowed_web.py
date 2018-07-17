@@ -17,7 +17,7 @@ class JunosDevices:
 
     # this class is for opening the connection to the Junipers, we use the object in the main loop below.
     # it uses a custom module which have the credentials and the list of the MX960-1 and MX960-2
-
+    # Lets Go
     def __init__(self):
         pass
 

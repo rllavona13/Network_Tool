@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, request
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
 import json

@@ -1,3 +1,5 @@
+__AUTHOR__ = 'Ramon Rivera Llavona  - rllavona13@me.com'
+
 from flask import Flask, render_template, request
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config

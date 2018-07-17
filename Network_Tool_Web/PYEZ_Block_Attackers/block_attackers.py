@@ -28,23 +28,21 @@ def block_form():
             cfg.commit()
             dev.close()
 
-            blocked_ip = request.form['attacker']
+        blocked_ip = request.form['attacker']
 
-            sql_connector = mysql.connector.connect(user='python',
-                                                    password='yzh8RB0Bcw1VivO3',
-                                                    host='localhost',
-                                                    database='BlockedIP')
+        sql_connector = mysql.connector.connect(user='python',
+                                                password='yzh8RB0Bcw1VivO3',
+                                                host='localhost',
+                                                database='BlockedIP')
 
-            cursor = sql_connector.cursor()
+        cursor = sql_connector.cursor()
 
-            add_ip = ("INSERT INTO blocked"
-                            "(ip)"
-                            "VALUES ('%s')" % blocked_ip)
+        add_ip = ("INSERT INTO blocked" "(ip)" "VALUES ('%s')" % blocked_ip)
 
-            cursor.execute(add_ip)
-            sql_connector.commit()
-            cursor.close()
-            sql_connector.close()
+        cursor.execute(add_ip)
+        sql_connector.commit()
+        cursor.close()
+        sql_connector.close()
 
         return render_template("attacker_commit.html", compares=compares)
 

@@ -57,6 +57,7 @@ class GetVersion:
 class GetModel:
 
     def __init__(self, host):
+
         self.host = host
 
         # host = '172.31.240.133'

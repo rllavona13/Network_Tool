@@ -28,7 +28,7 @@ class MkScanner:
                     _isMK = []
                     if list_ports[1] == 'open':
                         _isMK.append([host])
-                        print(_isMK)
+                        # print(_isMK)
 
 
 # for testing purposes

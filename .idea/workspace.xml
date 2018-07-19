@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
+    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="edit HTML Tags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/show_sipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/show_sipa.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +15,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py">
+      <file leaf-file-name="sipa_allowed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="345">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_sipa.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/show_sipa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sipa_allowed_commit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -51,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Main" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/bulkTest.py" />
@@ -60,6 +77,8 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/app.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/__init__.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/show_sipa.html" />
       </list>
     </option>
   </component>
@@ -113,22 +132,14 @@
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="Pyez_Sipa_Allowed" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
               <item name="Pyray_API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="dist-packages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,7 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532018594420</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="New Main.py for new script">
+      <created>1532019096611</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1532019096611</updated>
+    </task>
+    <task id="LOCAL-00019" summary="edit HTML Tags">
+      <created>1532032008276</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1532032008276</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -503,11 +528,11 @@
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.6175115" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.21198156" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32718894" />
       <window_info anchor="bottom" id="Python Console" order="18" weight="0.32949308" />
       <window_info anchor="bottom" id="Terminal" order="16" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.185029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.185029" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3986175" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -572,15 +597,10 @@
     <MESSAGE value="edited HTML styling" />
     <MESSAGE value="edited HTML styling(Footer Font)" />
     <MESSAGE value="New Main.py for new script" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Main.py for new script" />
+    <MESSAGE value="edit HTML Tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit HTML Tags" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -814,13 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -910,9 +923,26 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/show_sipa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>

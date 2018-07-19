@@ -1,11 +1,17 @@
 <component name="ProjectDictionaryState">
   <dictionary name="rllavona">
     <words>
+      <w>errorindex</w>
+      <w>errorindication</w>
+      <w>errorstatus</w>
       <w>junos</w>
       <w>lport</w>
       <w>mikrotik</w>
       <w>nmscanner</w>
+      <w>publ</w>
       <w>pyez</w>
+      <w>snmp</w>
+      <w>varbinds</w>
       <w>winbox</w>
     </words>
   </dictionary>

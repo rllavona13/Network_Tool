@@ -31,5 +31,5 @@ class MkScanner:
                         print(_isMK)
 
 
-# for testing
+# for testing purposes
 # MkScanner(host='172.31.240.0/24')

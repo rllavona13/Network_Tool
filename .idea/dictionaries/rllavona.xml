@@ -2,7 +2,11 @@
   <dictionary name="rllavona">
     <words>
       <w>junos</w>
+      <w>lport</w>
+      <w>mikrotik</w>
+      <w>nmscanner</w>
       <w>pyez</w>
+      <w>winbox</w>
     </words>
   </dictionary>
 </component>

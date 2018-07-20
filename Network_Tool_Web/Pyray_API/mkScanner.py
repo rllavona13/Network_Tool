@@ -32,4 +32,4 @@ class MkScanner:
 
 
 # for testing purposes
-MkScanner(host='172.31.240.133')
+# MkScanner(host='172.31.240.133')

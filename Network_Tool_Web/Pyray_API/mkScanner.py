@@ -25,11 +25,10 @@ class MkScanner:
                 for port in lport:
                     list_ports = (port, self.nmscanner[host][proto][port]['state'])
 
-                    _isMK = []
                     if list_ports[1] == 'open':
-                        _isMK.append([host])
-                        # print(_isMK)
+                        self.host = host
+                        print(host)
 
 
 # for testing purposes
-# MkScanner(host='172.31.240.0/24')
+MkScanner(host='172.31.240.0/24')

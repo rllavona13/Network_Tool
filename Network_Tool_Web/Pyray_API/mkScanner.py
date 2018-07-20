@@ -5,6 +5,7 @@ If is a match it will create a list object of hosts that are devices mikrotik ca
 """
 
 import nmap
+from threading import Thread
 
 
 class MkScanner:
@@ -31,4 +32,4 @@ class MkScanner:
 
 
 # for testing purposes
-MkScanner(host='172.31.0.0/16')
+MkScanner(host='172.31.240.133')

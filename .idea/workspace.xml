@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" afterDir="false" />
     </list>
@@ -18,28 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mkScanner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py">
+      <file leaf-file-name="blockAttackersGUI.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state relative-caret-position="255">
+              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
-                <element signature="e#203#214#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pyraySnmp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/pyraySnmp.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py">
+      <file leaf-file-name="block_attackers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="57">
+              <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -84,6 +81,8 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py" />
         <option value="/usr/lib/python2.7/mkScanner.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/__init__.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
       </list>
     </option>
   </component>
@@ -112,6 +111,18 @@
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="PYEZ_Block_Attackers_GUI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
@@ -154,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -173,8 +184,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="block_attackers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.blockAttackersGUI">
+    <configuration name="blockAttackersGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,11 +193,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,18 +277,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.sipa_allowed_web" />
-      <item itemvalue="Python.block_attackers" />
       <item itemvalue="Python.scanner_vb_1.6" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.mkScanner" />
+      <item itemvalue="Python.blockAttackersGUI" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.blockAttackersGUI" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.mkScanner" />
         <item itemvalue="Python.scanner_vb_1.6" />
         <item itemvalue="Python.sipa_allowed_web" />
-        <item itemvalue="Python.block_attackers" />
       </list>
     </recent_temporary>
   </component>
@@ -467,19 +478,26 @@
       <option name="project" value="LOCAL" />
       <updated>1532107111714</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="edit">
+      <created>1532107528782</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1532107528783</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="26" width="1928" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.185029" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.185029" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info id="DB Browser" order="1" weight="0.32999474" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.22235022" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.22235022" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32718894" />
       <window_info anchor="bottom" id="Python Console" order="18" weight="0.32949308" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" weight="0.24934107" />
@@ -551,19 +569,15 @@
     <MESSAGE value="edit HTML Tags" />
     <MESSAGE value="Se elimino la lista del API para que guarde la data en string." />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed_commit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Main">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -772,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -828,16 +835,6 @@
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/wn.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-          <folding>
-            <element signature="e#203#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/mkScanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -851,10 +848,40 @@
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/pyraySnmp.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <element signature="e#203#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
+          <caret selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

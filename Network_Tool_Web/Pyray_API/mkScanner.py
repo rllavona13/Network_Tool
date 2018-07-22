@@ -5,7 +5,7 @@ If is a match it will create a list object of hosts that are devices mikrotik ca
 """
 
 import nmap
-from threading import Thread
+import mysql.connector
 
 
 class MkScanner:
@@ -30,6 +30,24 @@ class MkScanner:
                         self.host = host
                         print(host)
 
+                        ip = str(host)
 
-# for testing purposes
-# MkScanner(host='172.31.240.133')
+                        sql_connector = mysql.connector.connect(user='python',
+                                                                password='yzh8RB0Bcw1VivO3',
+                                                                host='localhost',
+                                                                database='Mikrotik_Hosts')
+
+                        cursor = sql_connector.cursor()
+
+                        add_mikrotik = ("INSERT INTO devices" "(ip)" "VALUES ('%s')" % (ip))
+
+                        cursor.execute(add_mikrotik)
+                        sql_connector.commit()
+                        cursor.close()
+                        sql_connector.close()
+
+
+if __name__ == '__main__':
+    MkScanner(host='172.31.0.0/16')
+
+

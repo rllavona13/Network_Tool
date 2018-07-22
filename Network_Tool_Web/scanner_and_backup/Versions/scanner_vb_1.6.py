@@ -3,6 +3,7 @@ __VERSION__ = 'Beta 1.6'
 
 import nmap
 import paramiko
+from paramiko import AuthenticationException
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 import mysql.connector
 import sys
@@ -33,18 +34,26 @@ class Scanner:
                     list_ports = (port, self.nmscanner[host][proto][port]['state'])
 
                     if list_ports[1] == 'open':
-                        # print("This Device: %s is a Mikrotik" % host)
-
                         port = 22
                         nbytes = 4096
 
                         text_backup = 'export file=' + host
                         basic_backup = 'system backup save name=' + host
-                        add_snmp_community = 'snmp community add name=publ1c read-access=yes'
+                        add_snmp_community = 'snmp community add name=publ1c read-access=yes ' \
+                                             'addresses=196.12.161.0/24,192.168.253.0/24'
                         set_snmp_community = 'snmp set trap-community=publ1c trap-version=2'
+                        add_radius = 'radius add address=196.12.161.54 secret=MikRadius service=login'
+                        add_vpn_address_firewall = ' ip firewall address-list add list=Worldnet address=192.168.253.0/4'
+                        set_use_radius = 'user aaa set use-radius=yes'
 
                         client = paramiko.Transport(host, port)
-                        client.connect(username=auth['username'], password=auth['password'])
+                        client.connect(username=auth['other_username'], password=auth['other_password'])
+
+                        if client.get_exception() is True:
+                            client.connect(username=auth['username'], password=auth['password'])
+
+                        else:
+                            client.connect(username=auth['mik_username'], password=auth['mik_password'])
 
                         stdout_data = []
                         stderr_data = []
@@ -54,9 +63,16 @@ class Scanner:
                         session = client.open_channel(kind='session')
                         session.exec_command(set_snmp_community)
                         session = client.open_channel(kind='session')
+                        session.exec_command(add_vpn_address_firewall)
+                        session = client.open_channel(kind='session')
+                        session.exec_command(add_radius)
+                        session = client.open_channel(kind='session')
+                        session.exec_command(set_use_radius)
+                        session = client.open_channel(kind='session')
                         session.exec_command(text_backup)
                         session = client.open_channel(kind='session')
                         session.exec_command(basic_backup)
+
                         print('')
                         print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                         print('Please wait... Configuring SNMP Community in the system...')
@@ -79,6 +95,14 @@ class Scanner:
                                 break
 
                         session.close()
+                        if session.recv_exit_status() == 0:
+                            client.close()
+                        else:
+                            print('')
+                            print('Sorry try again...')
+                            print('')
+                        client.close()
+
                         if session.recv_exit_status() == 0:
                             client.close()
                         else:
@@ -173,5 +197,5 @@ class Scanner:
 
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
-    Scanner(host='172.31.240.133')
+    Scanner(host='172.31.240.0/24')
     print("")

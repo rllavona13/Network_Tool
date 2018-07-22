@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -22,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scanner_vb_1.6.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py">
+      <file leaf-file-name="scanner_vb_1.7.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2908">
-              <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
+            <state relative-caret-position="291">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#62#73#0" expanded="true" />
               </folding>
@@ -34,23 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ssh.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
+      <file leaf-file-name="auth.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json">
+      <file leaf-file-name="ssh.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="192" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,10 +96,11 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh_test.py" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" />
       </list>
     </option>
   </component>
@@ -315,25 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ssh">
-    <configuration name="blockAttackersGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.scanner_vb_1.7">
     <configuration name="mkScanner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,6 +346,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="scanner_vb_1.7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -408,18 +407,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.mkScanner" />
-      <item itemvalue="Python.blockAttackersGUI" />
       <item itemvalue="Python.ssh_test" />
       <item itemvalue="Python.ssh" />
       <item itemvalue="Python.scanner_vb_1.6" />
+      <item itemvalue="Python.scanner_vb_1.7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scanner_vb_1.7" />
         <item itemvalue="Python.ssh" />
         <item itemvalue="Python.scanner_vb_1.6" />
         <item itemvalue="Python.mkScanner" />
         <item itemvalue="Python.ssh_test" />
-        <item itemvalue="Python.blockAttackersGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -623,19 +622,26 @@
       <option name="project" value="LOCAL" />
       <updated>1532220503764</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Test ssh usernames error handling">
+      <created>1532287806634</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1532287806634</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="22" width="1372" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.18763961" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.18763961" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="1" weight="0.20923306" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.7358156" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" weight="0.46453902" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" weight="0.7358156" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32718894" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32949308" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
@@ -709,7 +715,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="edit" />
     <MESSAGE value="Added some tests files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some tests files" />
+    <MESSAGE value="Test ssh usernames error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test ssh usernames error handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/paramiko/auth_handler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
@@ -999,10 +999,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2908">
-          <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
+        <state relative-caret-position="503">
+          <caret line="199" column="30" selection-end-line="201" />
           <folding>
             <element signature="e#62#73#0" expanded="true" />
           </folding>
@@ -1011,18 +1018,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="192" selection-end-column="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#62#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

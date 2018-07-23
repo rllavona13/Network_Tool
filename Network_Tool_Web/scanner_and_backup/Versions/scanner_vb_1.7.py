@@ -38,18 +38,20 @@ class Scanner:
                         nbytes = 4096
 
                         """
-                        Configurations when connected to a mikrotik, it configures radius, add VPN ip addresses to the firewall,
+                        Configurations when connected to a mikrotik, it configures 
+                        radius, add VPN ip addresses to the firewall,
                         configure a SNMP community and set it as active community
                         """
                         text_backup = 'export file=' + host
                         basic_backup = 'system backup save name=' + host
-                        add_snmp_community = 'snmp community add name=publ1c read-access=yes addresses=196.12.161.0/24,192.168.253.0/24'
+                        add_snmp_community = 'snmp community add name=publ1c ' \
+                                             'read-access=yes addresses=196.12.161.0/24,192.168.253.0/24'
                         set_snmp_community = 'snmp set trap-community=publ1c trap-version=2'
                         add_radius = 'radius add address=196.12.161.54 secret=MikRadius service=login'
                         add_vpn_address_firewall = ' ip firewall address-list add list=Worldnet address=192.168.253.0/4'
                         set_use_radius = 'user aaa set use-radius=yes'
 
-                        # Usernames and Passwords - Stored in JSON File called auth.json
+                        # Username and Passwords - Stored in JSON File called auth.json
                         radius_user = auth['username']
                         radius_password = auth['password']
                         xarxa_user = auth['other_username']
@@ -82,15 +84,14 @@ class Scanner:
                                 session.exec_command(basic_backup)
 
                                 print('')
-                                print(
-                                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please wait... Configuring SNMP Community in the system...')
                                 print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
                                 print(
-                                            'Please wait... Creating %s' % host + '.backup Backup in the Mikrotik File System')
+                                            'Please wait... Creating %s' % host +
+                                            '.backup Backup in the Mikrotik File System')
                                 print('')
-                                print(
-                                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Backup successfully created at the File system')
                                 print('')
                                 print('+++++++++++++++++++++++++++++++++++++++++++++++++')
@@ -139,15 +140,14 @@ class Scanner:
                                 session.exec_command(basic_backup)
 
                                 print('')
-                                print(
-                                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please wait... Configuring SNMP Community in the system...')
                                 print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
                                 print(
-                                            'Please wait... Creating %s' % host + '.backup Backup in the Mikrotik File System')
+                                            'Please wait... Creating %s' % host +
+                                            '.backup Backup in the Mikrotik File System')
                                 print('')
-                                print(
-                                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Backup successfully created at the File system')
                                 print('')
                                 print('+++++++++++++++++++++++++++++++++++++++++++++++++')
@@ -170,7 +170,6 @@ class Scanner:
                                     print('Sorry try again...')
                                     print('')
                                 client.close()
-
 
                         else:
                             client = paramiko.Transport(host, port)
@@ -198,8 +197,10 @@ class Scanner:
                             print('')
                             print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                             print('Please wait... Configuring SNMP Community in the system...')
-                            print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
-                            print('Please wait... Creating %s' % host + '.backup Backup in the Mikrotik File System')
+                            print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik')
+                            print('Please wait... Creating %s' % host + '.backup Backup in the Mikrotik')
+                            print('Please wait... Creating SNMP Community')
+                            print('Please wait... Adding VPN IP Range into firewall address list')
                             print('')
                             print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                             print('Backup successfully created at the File system')

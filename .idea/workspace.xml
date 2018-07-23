@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scanner_vb_1.7.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scanner_vb_1.7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="-185">
+              <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
               <folding>
                 <element signature="e#62#73#0" expanded="true" />
               </folding>
@@ -32,23 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json">
+      <file leaf-file-name="snmp_error.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ssh.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="192" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -99,8 +86,10 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_mod.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py" />
       </list>
     </option>
   </component>
@@ -164,6 +153,13 @@
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
               <item name="scanner_and_backup" type="462c0819:PsiDirectoryNode" />
               <item name="paramiko_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="scanner_and_backup" type="462c0819:PsiDirectoryNode" />
+              <item name="snmp_test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
@@ -314,25 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scanner_vb_1.7">
-    <configuration name="mkScanner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.snmp_error">
     <configuration name="scanner_vb_1.6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,6 +347,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="snmp_error" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="snmp_mod" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_mod.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ssh" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -387,38 +401,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ssh_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="Python.mkScanner" />
-      <item itemvalue="Python.ssh_test" />
       <item itemvalue="Python.ssh" />
       <item itemvalue="Python.scanner_vb_1.6" />
       <item itemvalue="Python.scanner_vb_1.7" />
+      <item itemvalue="Python.snmp_error" />
+      <item itemvalue="Python.snmp_mod" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.snmp_error" />
+        <item itemvalue="Python.snmp_mod" />
         <item itemvalue="Python.scanner_vb_1.7" />
         <item itemvalue="Python.ssh" />
         <item itemvalue="Python.scanner_vb_1.6" />
-        <item itemvalue="Python.mkScanner" />
-        <item itemvalue="Python.ssh_test" />
       </list>
     </recent_temporary>
   </component>
@@ -629,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532287806634</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Test ssh usernames error handling">
+      <created>1532289805757</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1532289805757</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -641,12 +644,12 @@
       <window_info id="DB Browser" order="1" weight="0.20923306" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.7358156" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" weight="0.7358156" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988831" visible="true" weight="0.5283688" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32718894" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32949308" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996277" weight="0.7358156" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.92375886" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44858155" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -720,20 +723,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -875,11 +868,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Main" />
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_mod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/bulkTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1035,11 +1023,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="-185">
+          <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
           <folding>
             <element signature="e#62#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_mod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="134" column="2" lean-forward="true" selection-start-line="134" selection-start-column="2" selection-end-line="145" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -1,27 +1,26 @@
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 
-try:
+mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
+mikrotik_version = 'iso.3.6.1.2.1.47.1.1.1.1.2.65536'
+mikrotik_model = 'iso.3.6.1.2.1.1.1.0'
+mikrotik_serial = '1.3.6.1.4.1.14988.1.1.7.3.0'
 
-    host = '172.31.240.160'
 
-    snmp_gen = cmdgen.CommandGenerator()
-    mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
+class SnmpGet:
 
-    values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
-        cmdgen.CommunityData('publ1c'),
-        cmdgen.UdpTransportTarget(((host), 161)), mikrotik_identity)
+    def __init__(self, hosts, oid):
 
-    for name, val in varbinds:
-        device_name = val
+        self.hosts = hosts
+        self.oid = oid
 
-        identity = str(device_name)
-        ip = str(host)
+        snmp_gen = cmdgen.CommandGenerator()
 
-        print('DEVICE INFO:')
-        print('IP Address: ' + host)
-        print('Name: ' + identity)
-        print('By: Ramon Rivera - Neo Data')
-        print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+        errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
+            cmdgen.CommunityData('publ1c'),
+            cmdgen.UdpTransportTarget(((hosts), 161)), oid)
 
-except:
-    pass
+        for name, val in varbinds:
+            oid = val
+
+
+# SnmpGet(hosts='172.31.240.133', oid=mikrotik_version)

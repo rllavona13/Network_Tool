@@ -16,4 +16,4 @@ class SnmpGet:
 
         for name, val in varbinds:
             oid = val
-            print (str(oid))
+            print(str(oid))

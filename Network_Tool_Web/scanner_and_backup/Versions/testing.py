@@ -28,4 +28,3 @@ if __name__ == '__main__':
     get_mk_model()
     get_mk_version()
     get_mk_serial()
-

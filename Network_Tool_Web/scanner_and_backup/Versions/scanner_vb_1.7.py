@@ -294,7 +294,7 @@ class Scanner:
                         print('+++++++++++++++++++++++++++++++++++++++++++++++++')
 
                         sql_connector = mysql.connector.connect(user='python',
-                                                                password='cd py ',
+                                                                password='yzh8RB0Bcw1VivO3',
                                                                 host='localhost',
                                                                 database='MikrotikDB')
 

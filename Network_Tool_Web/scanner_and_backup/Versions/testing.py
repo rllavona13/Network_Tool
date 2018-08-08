@@ -1,7 +1,7 @@
 from snmpmod import SnmpGet
 
 
-hosts = '172.31.240.138'
+hosts = '172.31.240.130'
 
 mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
 mikrotik_version = 'iso.3.6.1.2.1.47.1.1.1.1.2.65536'

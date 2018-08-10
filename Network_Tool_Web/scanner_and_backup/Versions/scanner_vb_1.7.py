@@ -94,7 +94,7 @@ class Scanner:
                                 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Backup successfully created at the File system')
                                 print('')
-                                print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please Wait, Gathering device information...')
                                 print('')
 
@@ -150,7 +150,7 @@ class Scanner:
                                 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Backup successfully created at the File system')
                                 print('')
-                                print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please Wait, Gathering device information...')
                                 print('')
 
@@ -205,7 +205,7 @@ class Scanner:
                             print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                             print('Backup successfully created at the File system')
                             print('')
-                            print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+                            print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                             print('Please Wait, Gathering device information...')
                             print('')
 
@@ -291,7 +291,7 @@ class Scanner:
                         print('RouterOS Version: ' + version)
                         print('Mikrotik Model: ' + model)
                         print('By: Ramon Rivera - Neo Data')
-                        print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+                        print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 
                         sql_connector = mysql.connector.connect(user='python',
                                                                 password='yzh8RB0Bcw1VivO3',
@@ -312,5 +312,5 @@ class Scanner:
 
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
-    Scanner(host='172.31.240.0/24')
+    Scanner(host='172.31.240.161')
     print("")

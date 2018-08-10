@@ -42,25 +42,12 @@ def scanner(hosts):
                 if list_ports[1] == 'open':
                     #  mk_lst = ("This host: %s is a Mikrotik" % host)
                     mk_lst = host
-
-
-
-
-def snmpget(hosts, oid):
-
-        snmp_gen = cmdgen.CommandGenerator()
-
-        errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
-            cmdgen.CommunityData('publ1c'),
-            cmdgen.UdpTransportTarget(((scanner(hosts)), 161)), oid)
-
-        for name, val in varbinds:
-            oid = val
+                    print(mk_lst)
 
 
 if __name__ == '__main__':
 
 
-    scanner(hosts='172.31.240.133')
+    scanner(hosts='172.31.240.0/24')
     # scanner(sys.argv[1])
     print("")

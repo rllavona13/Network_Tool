@@ -312,5 +312,5 @@ class Scanner:
 
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
-    Scanner(host='172.31.240.161')
+    Scanner(host='172.31.240.133')
     print("")

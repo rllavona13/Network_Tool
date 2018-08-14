@@ -30,21 +30,20 @@ class Scanner:
                     if list_ports[1] == 'open':
                         mikrotik_hosts = host
 
-                        for ip in mikrotik_hosts:
-                            print(ip)  # print the ip which are trying to connect.
-                            try:
-                                ssh = paramiko.SSHClient()
-                                ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                                ssh.connect(hostname=ip, username=config['username'], password=config['password'])
-                                ssh.invoke_shell()
-                                stdin, stdout, stderr = ssh.exec_command('system identity print\n' 
-                                                                         'system routerboard print\n' 
-                                                                         'ip address print')
-                                print(stdout.read())
-                                ssh.close()
+                        print(host)  # print the ip which are trying to connect.
+                        try:
+                            ssh = paramiko.SSHClient()
+                            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                            ssh.connect(hostname=ip, username=config['username'], password=config['password'])
+                            ssh.invoke_shell()
+                            stdin, stdout, stderr = ssh.exec_command('system identity print\n' 
+                                                                     'system routerboard print\n' 
+                                                                     'ip address print')
+                            print(stdout.read())
+                            ssh.close()
 
-                            except Exception as ex:  # print the error and continues with the next ip address
-                                print(ex)
+                        except Exception as ex:  # print the error and continues with the next ip address
+                            print(ex)
 
 
 if __name__ == '__main__':

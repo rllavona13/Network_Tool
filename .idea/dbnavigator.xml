@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="1a336405-0897-4ecb-8cb7-785e598dd3a5">
-        <schema name="BlockedIP" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+        <schema name="test" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -39,6 +39,9 @@
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
+  </component>
+  <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/../rweb/testdb.sql" connection-id="1a336405-0897-4ecb-8cb7-785e598dd3a5" session-id="MAIN" current-schema="test" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -270,6 +273,7 @@
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
           <content-type name="YAML" enabled="true" />
+          <content-type name="Bash" enabled="true" />
         </content-types>
       </qualified-text-editor>
       <record-navigation>

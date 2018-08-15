@@ -32,6 +32,8 @@ class Scanner:
 
                         print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
                         print("")
+
+                        fk_list = []
                         try:
                             ssh = paramiko.SSHClient()
                             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -40,12 +42,17 @@ class Scanner:
                             stdin, stdout, stderr = ssh.exec_command('system identity print\n' 
                                                                      'system routerboard print\n' 
                                                                      'ip address print')
-                            print(stdout.read())
+
+                            fk_list.append(stdout.read().split('\r\n'))
+                            #vprint(stdout.read())
+
                             print("==============================================================================")
                             ssh.close()
 
+
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
+        print(fk_list[0][8])
 
 
 if __name__ == '__main__':

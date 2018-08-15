@@ -28,18 +28,20 @@ class Scanner:
                     list_ports = (port, self.nmscanner[host][proto][port]['state'])
 
                     if list_ports[1] == 'open':
-                        mikrotik_hosts = host
+                        mk_list = host
 
-                        print(host)  # print the ip which are trying to connect.
+                        print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
+                        print("")
                         try:
                             ssh = paramiko.SSHClient()
                             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                            ssh.connect(hostname=ip, username=config['username'], password=config['password'])
+                            ssh.connect(hostname=mk_list, username=config['username'], password=config['password'])
                             ssh.invoke_shell()
                             stdin, stdout, stderr = ssh.exec_command('system identity print\n' 
                                                                      'system routerboard print\n' 
                                                                      'ip address print')
                             print(stdout.read())
+                            print("==============================================================================")
                             ssh.close()
 
                         except Exception as ex:  # print the error and continues with the next ip address
@@ -47,4 +49,4 @@ class Scanner:
 
 
 if __name__ == '__main__':
-    Scanner(host='172.31.240.0/24')
+    Scanner(host='172.31.0.0/16')

@@ -49,4 +49,4 @@ class Scanner:
 
 
 if __name__ == '__main__':
-    Scanner(host='172.31.0.0/16')
+    Scanner(host='172.31.241.0/24')

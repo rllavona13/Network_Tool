@@ -16,6 +16,7 @@ class Scanner:
         self.host = host
         self.nmscanner = nmap.PortScanner()
         self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291')
+        fk_list = []
 
         for host in self.nmscanner.all_hosts():
 
@@ -33,7 +34,7 @@ class Scanner:
                         print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
                         print("")
 
-                        fk_list = []
+
                         try:
                             ssh = paramiko.SSHClient()
                             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -44,15 +45,16 @@ class Scanner:
                                                                      'ip address print')
 
                             fk_list.append(stdout.read().split('\r\n'))
+                            #print(fk_list[0][0])
                             #vprint(stdout.read())
 
                             print("==============================================================================")
                             ssh.close()
 
-
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
-        print(fk_list[0][8])
+        return fk_list
+
 
 
 if __name__ == '__main__':

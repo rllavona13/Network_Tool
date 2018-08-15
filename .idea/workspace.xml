@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="New Algorithm for nmap and SSH">
-      <change beforePath="$PROJECT_DIR$/.idea/Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Git.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" afterDir="false" />
     </list>
@@ -75,9 +74,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="32" />
+          <entry key="Python Console" value="66" />
           <entry key="md" value="265" />
-          <entry key="py" value="171" />
+          <entry key="py" value="251" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -85,7 +84,7 @@
         <counts>
           <entry key="Markdown" value="265" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="203" />
+          <entry key="Python" value="317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -112,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state relative-caret-position="172">
+              <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -199,31 +198,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -575,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534275487206</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="New Algorithm for nmap and SSH">
+      <created>1534361922379</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1534361922379</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -607,10 +589,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.5181818" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" weight="0.47727272" />
       <window_info anchor="right" id="Debug" order="4" weight="0.5083333" />
-      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.4996277" weight="0.5026681" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.8280303" />
+      <window_info active="true" anchor="right" id="Terminal" order="5" sideWeight="0.4996277" visible="true" weight="0.57575756" />
+      <window_info anchor="right" id="Python Console" order="6" weight="0.2590909" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -949,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="172">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

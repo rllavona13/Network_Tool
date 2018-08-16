@@ -65,18 +65,19 @@
     <session id="-1084796458">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="66" />
           <entry key="md" value="265" />
-          <entry key="py" value="251" />
+          <entry key="py" value="265" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -84,7 +85,7 @@
         <counts>
           <entry key="Markdown" value="265" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="317" />
+          <entry key="Python" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -111,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="367">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -557,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534361922379</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="New Algorithm for nmap and SSH">
+      <created>1534364764676</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1534364764676</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -577,7 +585,7 @@
       <window_info id="DB Browser" order="1" weight="0.20864461" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
-      <window_info id="Version Control" order="4" weight="0.32604057" />
+      <window_info active="true" id="Version Control" order="4" visible="true" weight="0.32575756" />
       <window_info id="TODO" order="5" weight="0.23479189" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -585,14 +593,14 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5003723" side_tool="true" weight="0.22838499" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4996277" side_tool="true" weight="0.31382114" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003723" side_tool="true" weight="0.22838499" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" weight="0.47727272" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.36666667" />
       <window_info anchor="right" id="Debug" order="4" weight="0.5083333" />
-      <window_info active="true" anchor="right" id="Terminal" order="5" sideWeight="0.4996277" visible="true" weight="0.57575756" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.2590909" />
+      <window_info anchor="right" id="Python Console" order="5" weight="0.2590909" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -931,8 +939,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="367">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

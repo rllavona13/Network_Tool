@@ -16,6 +16,7 @@ class Scanner:
         self.host = host
         self.nmscanner = nmap.PortScanner()
         self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291')
+
         fk_list = []
 
         for host in self.nmscanner.all_hosts():
@@ -33,7 +34,6 @@ class Scanner:
 
                         print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
                         print("")
-
 
                         try:
                             ssh = paramiko.SSHClient()
@@ -58,4 +58,4 @@ class Scanner:
 
 
 if __name__ == '__main__':
-    Scanner(host='172.31.241.0/24')
+    Scanner(host='172.31.240.0/24')

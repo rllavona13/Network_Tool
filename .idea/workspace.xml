@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="New Algorithm for nmap and SSH">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" afterDir="false" />
     </list>
@@ -27,53 +26,58 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="352" />
+          <entry key="html" value="269" />
           <entry key="json" value="100" />
-          <entry key="py" value="3169" />
+          <entry key="py" value="2751" />
           <entry key="txt" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="352" />
+          <entry key="HTML" value="269" />
           <entry key="JSON" value="100" />
           <entry key="PLAIN_TEXT" value="77" />
-          <entry key="Python" value="3169" />
+          <entry key="Python" value="2751" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="10" />
+          <entry key="html" value="7" />
           <entry key="jpg" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="5" />
           <entry key="mikrotik_list" value="1" />
-          <entry key="py" value="29" />
+          <entry key="py" value="24" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="10" />
+          <entry key="HTML" value="7" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="29" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
     </session>
     <session id="-1084796458">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="66" />
           <entry key="md" value="265" />
-          <entry key="py" value="30" />
+          <entry key="py" value="265" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -81,19 +85,21 @@
         <counts>
           <entry key="Markdown" value="265" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="30" />
+          <entry key="Python" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
           <entry key="md" value="1" />
+          <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Markdown" value="1" />
+          <entry key="Python" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -106,33 +112,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="367">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1534358706414" expanded="true" signature="1927:1928" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="36" column="11" selection-start-line="34" selection-end-line="46" selection-end-column="29" />
-              <folding>
-                <element signature="e#58#107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="41" selection-start-line="41" selection-end-line="45" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -143,7 +127,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -199,7 +182,6 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/scanner.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Test/auth.json" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/Test/templates/index.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" />
       </list>
     </option>
@@ -217,62 +199,9 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Network_Tool" type="cbb8eebc:String" user="Network_Tool" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Network_Tool" type="cbb8eebc:String" user="Network_Tool" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -296,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SSH">
+  <component name="RunManager">
     <configuration name="SSH" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,9 +233,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" />
@@ -318,104 +247,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="blockAttackersGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="block_attackers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scanner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/scanner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scanner_vb_1.7" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.blockAttackersGUI" />
-      <item itemvalue="Python.scanner" />
-      <item itemvalue="Python.scanner_vb_1.7" />
-      <item itemvalue="Python.SSH" />
-      <item itemvalue="Python.block_attackers" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.SSH" />
-        <item itemvalue="Python.block_attackers" />
-        <item itemvalue="Python.scanner_vb_1.7" />
-        <item itemvalue="Python.scanner" />
-        <item itemvalue="Python.blockAttackersGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -718,18 +552,18 @@
       <updated>1534275487206</updated>
     </task>
     <task id="LOCAL-00042" summary="New Algorithm for nmap and SSH">
-      <created>1534342970458</created>
+      <created>1534361922379</created>
       <option name="number" value="00042" />
       <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1534342970458</updated>
+      <updated>1534361922379</updated>
     </task>
     <task id="LOCAL-00043" summary="New Algorithm for nmap and SSH">
-      <created>1534345394502</created>
+      <created>1534364764676</created>
       <option name="number" value="00043" />
       <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1534345394502</updated>
+      <updated>1534364764676</updated>
     </task>
     <option name="localTasksCounter" value="44" />
     <servers />
@@ -744,10 +578,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="26" width="1928" height="1028" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.18729989" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19015151" />
+      <window_info id="DB Browser" order="1" weight="0.20864461" />
+      <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
+      <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
+      <window_info active="true" id="Version Control" order="4" visible="true" weight="0.32575756" />
+      <window_info id="TODO" order="5" weight="0.23479189" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="4" />
+      <window_info anchor="bottom" id="DB Execution Console" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4996277" side_tool="true" weight="0.31382114" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003723" side_tool="true" weight="0.22838499" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.36666667" />
+      <window_info anchor="right" id="Debug" order="4" weight="0.5083333" />
+      <window_info anchor="right" id="Python Console" order="5" weight="0.2590909" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
       <window_info id="DB Browser" order="1" weight="0.20864461" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
@@ -763,32 +619,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.51387405" />
-      <window_info anchor="right" id="Debug" order="4" weight="0.33191034" />
+      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.42727274" />
+      <window_info anchor="right" id="Debug" order="4" weight="0.5085379" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.4996277" weight="0.5026681" />
       <window_info anchor="right" id="Python Console" order="6" weight="0.32924226" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.18595679" />
-      <window_info id="DB Browser" order="1" weight="0.20923306" />
-      <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
-      <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" weight="0.4025974" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44858155" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32718894" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.7358156" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32949308" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996277" weight="0.7358156" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1015,8 +849,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/wn.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/snmpmod.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1031,13 +879,24 @@
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/config.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="28" column="50" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="e#310#321#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -1048,26 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/auth.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,60 +918,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3696">
           <caret line="21" column="11" selection-start-line="17" selection-end-line="35" selection-end-column="47" />
-          <folding>
-            <element signature="e#62#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/auth.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="77" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list" />
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list.txt" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="98" />
-          <folding>
-            <element signature="e#188#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="41" selection-start-line="41" selection-end-line="45" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="36" column="11" selection-start-line="34" selection-end-line="46" selection-end-column="29" />
-          <folding>
-            <element signature="e#58#107#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="24752">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="367">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1534358706414" expanded="true" signature="1927:1928" ph="..." />
           </folding>
         </state>
       </provider>

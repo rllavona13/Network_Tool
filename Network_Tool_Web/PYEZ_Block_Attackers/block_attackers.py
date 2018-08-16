@@ -65,7 +65,7 @@ def block_form():
 
     elif "show" in request.form:
         for hosts in config['ip']:
-            dev = Device(user=config.username, password=config.password, host=hosts, port=22)
+            dev = Device(host=hosts, user=config.username, password=config.password, port=22)
             dev.open()
             dev.close()
         return render_template("attacker_commit.html")

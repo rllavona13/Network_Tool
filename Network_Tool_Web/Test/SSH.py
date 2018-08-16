@@ -2,7 +2,6 @@ import paramiko
 import json
 import nmap
 
-# Json reader
 config_file = open('auth.json')
 config = json.load(config_file)
 config_file.close()
@@ -45,8 +44,8 @@ class Scanner:
                                                                      'ip address print')
 
                             fk_list.append(stdout.read().split('\r\n'))
-                            #print(fk_list[0][0])
-                            #vprint(stdout.read())
+                            print(fk_list[0][0])
+                            # print(stdout.read())
 
                             print("==============================================================================")
                             ssh.close()
@@ -54,7 +53,6 @@ class Scanner:
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
         return fk_list
-
 
 
 if __name__ == '__main__':

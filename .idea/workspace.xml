@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="New Algorithm for nmap and SSH">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/rllavona.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" afterDir="false" />
     </list>
@@ -65,12 +66,12 @@
     <session id="-1084796458">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -112,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="286">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -199,7 +200,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rweb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -565,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534364764676</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="New Algorithm for nmap and SSH">
+      <created>1534383303938</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1534383303938</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -581,11 +602,11 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19015151" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
       <window_info id="DB Browser" order="1" weight="0.20864461" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
-      <window_info active="true" id="Version Control" order="4" visible="true" weight="0.32575756" />
+      <window_info id="Version Control" order="4" weight="0.33106062" />
       <window_info id="TODO" order="5" weight="0.23479189" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -594,11 +615,11 @@
       <window_info anchor="bottom" id="Messages" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4996277" side_tool="true" weight="0.31382114" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003723" side_tool="true" weight="0.22838499" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003723" side_tool="true" visible="true" weight="0.22838499" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.36666667" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.4988831" weight="0.36666667" />
       <window_info anchor="right" id="Debug" order="4" weight="0.5083333" />
       <window_info anchor="right" id="Python Console" order="5" weight="0.2590909" />
     </layout>
@@ -939,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state relative-caret-position="286">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

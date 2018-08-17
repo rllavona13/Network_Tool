@@ -52,8 +52,6 @@ class Scanner:
 
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
-        return fk_list
-
 
 if __name__ == '__main__':
     Scanner(host='172.31.240.0/24')

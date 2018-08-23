@@ -3,12 +3,11 @@ import json
 import nmap
 import mysql.connector
 import sys
-from multiprocessing import Process
+
 
 config_file = open('auth.json')
 config = json.load(config_file)
 config_file.close()
-# ip = '172.31.240.133'
 
 
 class Scanner:
@@ -17,7 +16,7 @@ class Scanner:
 
         self.host = host
         self.nmscanner = nmap.PortScanner()
-        self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291 --min-hostgroup 256 --ttl 10 --max-retries 1')
+        self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291 --ttl 10 --max-retries 1')
 
         for host in self.nmscanner.all_hosts():
 
@@ -43,6 +42,7 @@ class Scanner:
                             stdin, stdout, stderr = ssh.exec_command('system identity print')
 
                             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
+
                             print(stdout.read())
 
                             print("==============================================================================")
@@ -67,7 +67,11 @@ class Scanner:
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
 
+                            f = open('mik_errors.txt', 'a')
+                            f.write(str(ex))
+                            f.close()
+
 
 if __name__ == '__main__':
-    Scanner(host='172.16.240.0/24')
+    Scanner(host='172.31.226.0/24')
     # Scanner(host=sys.argv[1])

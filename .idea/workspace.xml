@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="New Algorithm for nmap and SSH">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/rrivera.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py" afterDir="false" />
     </list>
@@ -22,18 +19,19 @@
         <counts>
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="269" />
           <entry key="json" value="100" />
-          <entry key="py" value="2818" />
+          <entry key="py" value="3589" />
           <entry key="txt" value="77" />
         </counts>
       </usages-collector>
@@ -42,7 +40,7 @@
           <entry key="HTML" value="269" />
           <entry key="JSON" value="100" />
           <entry key="PLAIN_TEXT" value="77" />
-          <entry key="Python" value="2818" />
+          <entry key="Python" value="3589" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,8 +50,8 @@
           <entry key="js" value="1" />
           <entry key="json" value="5" />
           <entry key="mikrotik_list" value="1" />
-          <entry key="py" value="26" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="28" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -62,8 +60,8 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="26" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
     </session>
@@ -117,29 +115,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+            <state relative-caret-position="510">
+              <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="303" column="46" selection-start-line="295" selection-start-column="24" selection-end-line="310" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="39" column="19" selection-start-line="34" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -157,6 +137,7 @@
     <findStrings>
       <find>h2</find>
       <find>values</find>
+      <find>2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,6 +236,12 @@
               <item name="scanner_and_backup" type="462c0819:PsiDirectoryNode" />
               <item name="Versions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +273,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="SSH" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SSH" type="PythonConfigurationType" factoryName="Python">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,11 +294,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.SSH" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -632,7 +614,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534383303938</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="New Algorithm for nmap and SSH">
+      <created>1534535351747</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1534535351747</updated>
+    </task>
+    <task id="LOCAL-00046" summary="New Algorithm for nmap and SSH">
+      <created>1534783833555</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1534783833555</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,14 +656,14 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4996277" side_tool="true" weight="0.31382114" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003723" side_tool="true" weight="0.22847302" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5003723" side_tool="true" weight="0.22847302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.4988831" visible="true" weight="0.48665956" />
-      <window_info anchor="right" id="Debug" order="4" weight="0.5083333" />
-      <window_info anchor="right" id="Python Console" order="5" weight="0.2590909" />
+      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.49827784" visible="true" weight="0.5133405" />
+      <window_info anchor="right" id="Debug" order="4" weight="0.50800425" />
+      <window_info anchor="right" id="Python Console" order="5" sideWeight="0.50172216" weight="0.5085379" />
+      <window_info anchor="right" id="Terminal" order="6" sideWeight="0.4996277" weight="0.48399147" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -811,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="199" column="30" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -865,13 +854,6 @@
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/static/js/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1620" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/bert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3385">
-          <caret line="338" lean-forward="true" selection-start-line="338" selection-end-line="338" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/testing.py">
@@ -982,7 +964,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list" />
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list.txt" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24752">
@@ -990,24 +971,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mikrotik_list.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/bert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="39" column="19" selection-start-line="34" selection-end-line="47" />
+        <state relative-caret-position="4980">
+          <caret line="338" selection-start-line="338" selection-end-line="338" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/scanner_vb_1.7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
+        <state relative-caret-position="4455">
           <caret line="303" column="46" selection-start-line="295" selection-start-column="24" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" column="19" selection-start-line="34" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/mik_errors.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="412" selection-start-column="412" selection-end-column="412" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/SSH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+        <state relative-caret-position="510">
+          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

@@ -54,7 +54,6 @@ class Scanner:
                             f = open('mikrotik_list.txt', 'a')
                             f.write(str(str(identity_fixed) + mk_list))
 
-
                             sql_connector = mysql.connector.connect(user='python',
                                                                     password='yzh8RB0Bcw1VivO3',
                                                                     host='localhost',
@@ -77,7 +76,6 @@ class Scanner:
                             open('mikrotik_list.txt', 'a')
                             f.write(ex)
                             f.close()
-
 
 
 if __name__ == '__main__':

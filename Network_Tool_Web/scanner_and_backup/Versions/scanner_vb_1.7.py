@@ -17,300 +17,309 @@ config_file.close()
 
 class Scanner:
 
-    def __init__(self, host):
+    def __init__(self):
+        pass
 
-        self.host = host
-        self.nmscanner = nmap.PortScanner()
-        self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291')
+    def mk_scan(self, host):
 
-        for host in self.nmscanner.all_hosts():
+        host = host
+        nmscanner = nmap.PortScanner()
+        nmscanner.scan(hosts=host, arguments='-Pn -max-retries 1 -p 8291')
 
-            for proto in self.nmscanner[host].all_protocols():
+        try:
+            for host in nmscanner.all_hosts():
 
-                lport = list(self.nmscanner[host][proto].keys())
-                lport.sort()
+                for proto in nmscanner[host].all_protocols():
 
-                for port in lport:
-                    list_ports = (port, self.nmscanner[host][proto][port]['state'])
+                    lport = list(nmscanner[host][proto].keys())
+                    lport.sort()
 
-                    if list_ports[1] == 'open':
-                        port = 22
-                        nbytes = 4096
+                    for port in lport:
+                        list_ports = (port, nmscanner[host][proto][port]['state'])
 
-                        """
-                        Configurations when connected to a mikrotik, it configures 
-                        radius, add VPN ip addresses to the firewall,
-                        configure a SNMP community and set it as active community
-                        """
-                        text_backup = 'export file=' + host
-                        basic_backup = 'system backup save name=' + host
-                        add_snmp_community = 'snmp community add name=publ1c ' \
-                                             'read-access=yes addresses=196.12.161.0/24,192.168.253.0/24'
-                        set_snmp_community = 'snmp set trap-community=publ1c trap-version=2'
-                        add_radius = 'radius add address=196.12.161.54 secret=MikRadius service=login'
-                        add_vpn_address_firewall = ' ip firewall address-list add list=Worldnet address=192.168.253.0/4'
-                        set_use_radius = 'user aaa set use-radius=yes'
+                        if list_ports[1] == 'open':
+                            port = 22
+                            nbytes = 4096
 
-                        # Username and Passwords - Stored in JSON File called auth.json
-                        radius_user = auth['username']
-                        radius_password = auth['password']
-                        xarxa_user = auth['other_username']
-                        xarxa_password = auth['other_password']
-                        mik277_user = auth['mik_username']
-                        mik277_password = auth['mik_password']
+                            """
+                            Configurations when connected to a mikrotik, it configures 
+                            radius, add VPN ip addresses to the firewall,
+                            configure a SNMP community and set it as active community
+                            """
+                            text_backup = 'export file=' + host
+                            basic_backup = 'system backup save name=' + host
+                            add_snmp_community = 'snmp community add name=publ1c ' \
+                                                 'read-access=yes addresses=196.12.161.0/24,192.168.253.0/24'
+                            set_snmp_community = 'snmp set trap-community=publ1c trap-version=2'
+                            add_radius = 'radius add address=196.12.161.54 secret=MikRadius service=login'
+                            add_vpn_address_firewall = ' ip firewall address-list add list=Worldnet address=192.168.253.0/4'
+                            set_use_radius = 'user aaa set use-radius=yes'
 
-                        if paramiko.AuthenticationException:
-                            try:
-                                client = paramiko.Transport(host, port)
+                            # Username and Passwords - Stored in JSON File called auth.json
+                            radius_user = auth['username']
+                            radius_password = auth['password']
+                            xarxa_user = auth['other_username']
+                            xarxa_password = auth['other_password']
+                            mik277_user = auth['mik_username']
+                            mik277_password = auth['mik_password']
 
-                                client.connect(username=mik277_user, password=mik277_password)
+                            if paramiko.AuthenticationException:
+                                try:
+                                    client = paramiko.Transport(host, port)
 
-                                stdout_data = []
-                                stderr_data = []
+                                    client.connect(username=mik277_user, password=mik277_password)
 
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_snmp_community)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(set_snmp_community)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_vpn_address_firewall)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_radius)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(set_use_radius)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(text_backup)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(basic_backup)
+                                    stdout_data = []
+                                    stderr_data = []
 
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Please wait... Configuring SNMP Community in the system...')
-                                print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
-                                print(
-                                            'Please wait... Creating %s' % host +
-                                            '.backup Backup in the Mikrotik File System')
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Backup successfully created at the File system')
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Please Wait, Gathering device information...')
-                                print('')
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_snmp_community)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(set_snmp_community)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_vpn_address_firewall)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_radius)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(set_use_radius)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(text_backup)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(basic_backup)
 
-                                while True:
-                                    if session.recv_ready():
-                                        stdout_data.append(session.recv(nbytes))
-                                    if session.recv_stderr_ready():
-                                        stderr_data.append(session.recv_stderr(nbytes))
-                                    if session.exit_status_ready():
-                                        break
+                                    print('')
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Please wait... Configuring SNMP Community in the system...')
+                                    print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
+                                    print(
+                                                'Please wait... Creating %s' % host +
+                                                '.backup Backup in the Mikrotik File System')
+                                    print('')
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Backup successfully created at the File system')
+                                    print('')
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Please Wait, Gathering device information...')
+                                    print('')
 
-                                session.close()
-                                if session.recv_exit_status() == 0:
+                                    while True:
+                                        if session.recv_ready():
+                                            stdout_data.append(session.recv(nbytes))
+                                        if session.recv_stderr_ready():
+                                            stderr_data.append(session.recv_stderr(nbytes))
+                                        if session.exit_status_ready():
+                                            break
+
+                                    session.close()
+                                    if session.recv_exit_status() == 0:
+                                        client.close()
+                                    else:
+                                        print('')
+                                        print('Sorry try again...')
+                                        print('')
                                     client.close()
-                                else:
+
+                                except paramiko.AuthenticationException:
+
+                                    client = paramiko.Transport(host, port)
+
+                                    client.connect(username=radius_user, password=radius_password)
+
+                                    stdout_data = []
+                                    stderr_data = []
+
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_snmp_community)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(set_snmp_community)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_vpn_address_firewall)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(add_radius)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(set_use_radius)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(text_backup)
+                                    session = client.open_channel(kind='session')
+                                    session.exec_command(basic_backup)
+
                                     print('')
-                                    print('Sorry try again...')
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Please wait... Configuring SNMP Community in the system...')
+                                    print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
+                                    print(
+                                                'Please wait... Creating %s' % host +
+                                                '.backup Backup in the Mikrotik File System')
                                     print('')
-                                client.close()
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Backup successfully created at the File system')
+                                    print('')
+                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('Please Wait, Gathering device information...')
+                                    print('')
 
-                            except paramiko.AuthenticationException:
+                                    while True:
+                                        if session.recv_ready():
+                                            stdout_data.append(session.recv(nbytes))
+                                        if session.recv_stderr_ready():
+                                            stderr_data.append(session.recv_stderr(nbytes))
+                                        if session.exit_status_ready():
+                                            break
 
-                                client = paramiko.Transport(host, port)
-
-                                client.connect(username=radius_user, password=radius_password)
-
-                                stdout_data = []
-                                stderr_data = []
-
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_snmp_community)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(set_snmp_community)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_vpn_address_firewall)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(add_radius)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(set_use_radius)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(text_backup)
-                                session = client.open_channel(kind='session')
-                                session.exec_command(basic_backup)
-
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Please wait... Configuring SNMP Community in the system...')
-                                print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
-                                print(
-                                            'Please wait... Creating %s' % host +
-                                            '.backup Backup in the Mikrotik File System')
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Backup successfully created at the File system')
-                                print('')
-                                print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                                print('Please Wait, Gathering device information...')
-                                print('')
-
-                                while True:
-                                    if session.recv_ready():
-                                        stdout_data.append(session.recv(nbytes))
-                                    if session.recv_stderr_ready():
-                                        stderr_data.append(session.recv_stderr(nbytes))
-                                    if session.exit_status_ready():
-                                        break
-
-                                session.close()
-                                if session.recv_exit_status() == 0:
+                                    session.close()
+                                    if session.recv_exit_status() == 0:
+                                        client.close()
+                                    else:
+                                        print('')
+                                        print('Sorry try again...')
+                                        print('')
                                     client.close()
-                                else:
-                                    print('')
-                                    print('Sorry try again...')
-                                    print('')
-                                client.close()
 
-                        else:
-                            client = paramiko.Transport(host, port)
-
-                            client.connect(username=xarxa_user, password=xarxa_password)
-
-                            stdout_data = []
-                            stderr_data = []
-
-                            session = client.open_channel(kind='session')
-                            session.exec_command(add_snmp_community)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(set_snmp_community)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(add_vpn_address_firewall)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(add_radius)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(set_use_radius)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(text_backup)
-                            session = client.open_channel(kind='session')
-                            session.exec_command(basic_backup)
-
-                            print('')
-                            print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                            print('Please wait... Configuring SNMP Community in the system...')
-                            print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik')
-                            print('Please wait... Creating %s' % host + '.backup Backup in the Mikrotik')
-                            print('Please wait... Creating SNMP Community')
-                            print('Please wait... Adding VPN IP Range into firewall address list')
-                            print('')
-                            print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                            print('Backup successfully created at the File system')
-                            print('')
-                            print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-                            print('Please Wait, Gathering device information...')
-                            print('')
-
-                            while True:
-                                if session.recv_ready():
-                                    stdout_data.append(session.recv(nbytes))
-                                if session.recv_stderr_ready():
-                                    stderr_data.append(session.recv_stderr(nbytes))
-                                if session.exit_status_ready():
-                                    break
-
-                            session.close()
-                            if session.recv_exit_status() == 0:
-                                client.close()
                             else:
+                                client = paramiko.Transport(host, port)
+
+                                client.connect(username=xarxa_user, password=xarxa_password)
+
+                                stdout_data = []
+                                stderr_data = []
+
+                                session = client.open_channel(kind='session')
+                                session.exec_command(add_snmp_community)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(set_snmp_community)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(add_vpn_address_firewall)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(add_radius)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(set_use_radius)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(text_backup)
+                                session = client.open_channel(kind='session')
+                                session.exec_command(basic_backup)
+
                                 print('')
-                                print('Sorry try again...')
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('Please wait... Configuring SNMP Community in the system...')
+                                print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik')
+                                print('Please wait... Creating %s' % host + '.backup Backup in the Mikrotik')
+                                print('Please wait... Creating SNMP Community')
+                                print('Please wait... Adding VPN IP Range into firewall address list')
                                 print('')
-                            client.close()
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('Backup successfully created at the File system')
+                                print('')
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('Please Wait, Gathering device information...')
+                                print('')
 
-                        class GetIdentity:
+                                while True:
+                                    if session.recv_ready():
+                                        stdout_data.append(session.recv(nbytes))
+                                    if session.recv_stderr_ready():
+                                        stderr_data.append(session.recv_stderr(nbytes))
+                                    if session.exit_status_ready():
+                                        break
 
-                            def __init__(self):
-                                pass
+                                session.close()
+                                if session.recv_exit_status() == 0:
+                                    client.close()
+                                else:
+                                    print('')
+                                    print('Sorry try again...')
+                                    print('')
+                                client.close()
 
-                            # host = '172.31.240.133'
+                            class GetIdentity:
 
-                            snmp_gen = cmdgen.CommandGenerator()
+                                def __init__(self):
+                                    pass
 
-                            mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
+                                # host = '172.31.240.133'
 
-                            values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
-                                cmdgen.CommunityData('publ1c'),
-                                cmdgen.UdpTransportTarget(((host), 161)), mikrotik_identity)
+                                snmp_gen = cmdgen.CommandGenerator()
 
-                            for name, val in varbinds:
-                                device_name = val
+                                mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
 
-                        class GetVersion:
+                                values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
+                                    cmdgen.CommunityData('publ1c'),
+                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_identity)
 
-                            def __init__(self):
-                                pass
+                                for name, val in varbinds:
+                                    device_name = val
 
-                            # host = '172.31.240.133'
+                            class GetVersion:
 
-                            snmp_gen = cmdgen.CommandGenerator()
+                                def __init__(self):
+                                    pass
 
-                            mikrotik_version = 'iso.3.6.1.2.1.47.1.1.1.1.2.65536'
+                                # host = '172.31.240.133'
 
-                            values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
-                                cmdgen.CommunityData('publ1c'),
-                                cmdgen.UdpTransportTarget(((host), 161)), mikrotik_version)
+                                snmp_gen = cmdgen.CommandGenerator()
 
-                            for name, val in varbinds:
-                                device_version = val
+                                mikrotik_version = 'iso.3.6.1.2.1.47.1.1.1.1.2.65536'
 
-                        class GetModel:
+                                values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
+                                    cmdgen.CommunityData('publ1c'),
+                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_version)
 
-                            def __init__(self):
-                                pass
+                                for name, val in varbinds:
+                                    device_version = val
 
-                            # host = '172.31.240.133'
+                            class GetModel:
 
-                            snmp_gen = cmdgen.CommandGenerator()
+                                def __init__(self):
+                                    pass
 
-                            mikrotik_model = 'iso.3.6.1.2.1.1.1.0'
+                                # host = '172.31.240.133'
 
-                            values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
-                                cmdgen.CommunityData('publ1c'),
-                                cmdgen.UdpTransportTarget(((host), 161)), mikrotik_model)
+                                snmp_gen = cmdgen.CommandGenerator()
 
-                            for name, val in varbinds:
-                                device_model = val
+                                mikrotik_model = 'iso.3.6.1.2.1.1.1.0'
 
-                        identity = str(GetIdentity.device_name)
-                        version = str(GetVersion.device_version)
-                        model = str(GetModel.device_model)
-                        ip = str(host)
+                                values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
+                                    cmdgen.CommunityData('publ1c'),
+                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_model)
 
-                        print('DEVICE INFO:')
-                        print('IP Address: ' + host)
-                        print('Name: ' + identity)
-                        print('RouterOS Version: ' + version)
-                        print('Mikrotik Model: ' + model)
-                        print('By: Ramon Rivera - Neo Data')
-                        print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                for name, val in varbinds:
+                                    device_model = val
 
-                        sql_connector = mysql.connector.connect(user='python',
-                                                                password='yzh8RB0Bcw1VivO3',
-                                                                host='localhost',
-                                                                database='MikrotikDB')
+                            identity = str(GetIdentity.device_name)
+                            version = str(GetVersion.device_version)
+                            model = str(GetModel.device_model)
+                            ip = str(host)
 
-                        cursor = sql_connector.cursor()
+                            print('DEVICE INFO:')
+                            print('IP Address: ' + host)
+                            print('Name: ' + identity)
+                            print('RouterOS Version: ' + version)
+                            print('Mikrotik Model: ' + model)
+                            print('By: Ramon Rivera - Neo Data')
+                            print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 
-                        add_mikrotik = ("INSERT INTO devices"
-                                        "(name, ip, model, version)"
-                                        "VALUES ('%s', '%s', '%s', '%s')" % (identity, ip, model, version))
+                            sql_connector = mysql.connector.connect(user='python',
+                                                                    password='yzh8RB0Bcw1VivO3',
+                                                                    host='localhost',
+                                                                    database='test')
 
-                        cursor.execute(add_mikrotik)
-                        sql_connector.commit()
-                        cursor.close()
-                        sql_connector.close()
+                            cursor = sql_connector.cursor()
+
+                            add_mikrotik = ("INSERT INTO mik_scanned"
+                                            "(name, ip, model, version)"
+                                            "VALUES ('%s', '%s', '%s', '%s')" % (identity, ip, model, version))
+
+                            cursor.execute(add_mikrotik)
+                            sql_connector.commit()
+                            cursor.close()
+                            sql_connector.close()
+
+        except Exception as ex:  # print the error and continues with the next ip address
+            print(ex)
+
 
 
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
-    Scanner(host='172.31.240.133')
+    Scanner().mk_scan(host='172.31.240.0/24')
+
     print("")

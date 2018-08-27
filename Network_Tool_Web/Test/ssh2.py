@@ -43,14 +43,17 @@ class Scanner:
 
                             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
 
-                            print(stdout.read())
-
+                            list_fixed = mk_scanned_host.strip('name:').split('name:')  # Here we "cut off" name: from strings.
+                                                                             # Leaving only the name
+                            identity_fixed = (list_fixed[1])
+                            # print(json.dumps(mk_scanned_host, indent=4))
+                            print(str(identity_fixed))
                             print("==============================================================================")
                             ssh.close()
 
                             f = open('mikrotik_list.txt', 'a')
-                            f.write(str(mk_scanned_host + mk_list))
-                            f.close()
+                            f.write(str(str(identity_fixed) + mk_list))
+
 
                             sql_connector = mysql.connector.connect(user='python',
                                                                     password='yzh8RB0Bcw1VivO3',
@@ -61,7 +64,7 @@ class Scanner:
 
                             add_mikrotik = ("INSERT INTO devices"
                                             "(name, ip)"
-                                            "VALUES ('%s', '%s')" % (mk_scanned_host, mk_list))
+                                            "VALUES ('%s', '%s')" % (identity_fixed, mk_list))
 
                             cursor.execute(add_mikrotik)
                             sql_connector.commit()
@@ -71,7 +74,12 @@ class Scanner:
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
 
+                            open('mikrotik_list.txt', 'a')
+                            f.write(ex)
+                            f.close()
+
+
 
 if __name__ == '__main__':
-    Scanner(host='172.31.101.0/24')
+    Scanner(host='172.31.242.0/24')
     # Scanner(host=sys.argv[1])

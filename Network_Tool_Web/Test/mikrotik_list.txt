@@ -1,3 +1,125 @@
- SNC TECH Camuy
+  name: MCD-FAJARDO
 
-172.31.242.1
+ - 172.31.226.109  name: Mc Donald Colobos
+
+ - 172.31.226.113  name: MikroTik-ASC-Disaster-Recovery-San-Juan
+
+ - 172.31.226.125  name: MCD  MONTEHIEDRA
+
+ - 172.31.226.129  name: McDonalds Levitown
+
+ - 172.31.226.137  name: AD-MCD-HATO-TEJAS
+
+ - 172.31.226.141  name: ARCOS DORADOS-DORADO
+
+ - 172.31.226.153  name: Mc Donald Trujillo Alto
+
+ - 172.31.226.165  name: Mc Donald Yauco
+
+ - 172.31.226.181  name: Mc Donalds Mayaguez Terrace
+
+ - 172.31.226.185  name: MC-Munos Rivera
+
+ - 172.31.226.189  name: Arcos Ponce MCDonalds
+
+ - 172.31.226.193  name: CLINICA SALUD (CENTRO ARARAT) JUANA DIAZ
+
+ - 172.31.226.201  name: MikroTik-ASG-Ponce
+
+ - 172.31.226.205  name: MikroTik-Autoridad de los Puertos Ceiba P2P
+
+ - 172.31.226.221  name: MikroTik-Defensoria De Personas Con Inpedimentos Humacao
+
+ - 172.31.226.229  name: BARISTAS DEL CARIBE-LOS PASEOS 
+
+ - 172.31.226.249  name: Ombusman Central Fibra In-Building
+
+ - 172.31.226.25  name: VA-Arecibo
+
+ - 172.31.226.33  name: MikroTik-UNIVERSIDAD-CATOLICA-PONCE-CENTRAL
+
+ - 172.31.226.38  name: BELLA GROUP PALMAS FIBRA WNET 100M
+
+ - 172.31.226.41  name: BELLA GROUP PALMAS FIBRA WNET 100M
+
+ - 172.31.226.46  name: ASC Site Central
+
+ - 172.31.226.49  name: MikroTik-MULTITRANSPORT AND MARINE CO.
+
+ - 172.31.226.53  name: BARISTAS/PLAZA CAROLINA
+
+ - 172.31.226.61  name: Radio Redentor
+
+ - 172.31.226.66  name: MikroTik-Baristas del Caribe Plaza Dorada
+
+ - 172.31.226.77  name: CENTRO ARRARAT/SITE CENTRAL/1507
+
+ - 172.31.226.81  name: Advance Logistic Corp
+
+ - 172.31.226.93  name: MAGIG TRANSPORT BGP
+
+ - 172.31.227.1  name: Sign Engineering
+
+ - 172.31.227.106  name: Carrier Caparra
+
+ - 172.31.227.109  name: MikroTik-Restaurant in Box-California BBQ
+
+ - 172.31.227.121  name: Elderly Transpotation Manati
+
+ - 172.31.227.125  name: MikroTik-PR FAMILY INSTITUTE BO. PALMAREJO COROZAL
+
+ - 172.31.227.14  name: Outek Caribbean
+
+ - 172.31.227.141  name: Outek Caribbean
+
+ - 172.31.227.146  name: Ombusman Central Fibra In-Building
+
+ - 172.31.227.154  name: Jose Santiago 
+
+ - 172.31.227.158  name: Jose Santiago 
+
+ - 172.31.227.161  name: MikroTikHight-Point
+
+ - 172.31.227.177  name: Baristas del Caribe/SANTA ISABEL
+
+ - 172.31.227.181  name: MikroTik-Centro-Sicoterapeutico-Ponce
+
+ - 172.31.227.201  name: Baristas del Caribe Plaza Olmedo Antena Aeronet
+
+ - 172.31.227.221  name: MikroTik-Sartorius
+
+ - 172.31.227.225  name: MikroTik-Sartorius
+
+ - 172.31.227.230  name: Elderly Transpotation Manati
+
+ - 172.31.227.234  name: BARISTAS DEL CARIBE-ESCORIAL 88010
+
+ - 172.31.227.237  name: Walmart_Cayey_ATT_Fiber
+
+ - 172.31.227.241  name: BARISTAS DEL CARIBE-GARDEN HILLS
+
+ - 172.31.227.245  name: Baristas de PR Rio Hondo Bayamon
+
+ - 172.31.227.249  name: MikroTik-Roma-Inbuilding
+
+ - 172.31.227.33  name: MikroTik-PR FAMILY INSTITUTE BO. PALMAREJO COROZAL
+
+ - 172.31.227.5  name: Carrier Caparra
+
+ - 172.31.227.58  name: QUALITY LIFE SOLUTION 
+
+ - 172.31.227.61  name: MikroTik-Malave Surgical Group
+
+ - 172.31.227.69  name: Integrand Assurance Ponce
+
+ - 172.31.227.73  name: INTEGRAND ASSURANCE ARECIBO
+
+ - 172.31.227.77  name: INTEGRAND ASSURANCE CAGUAS
+
+ - 172.31.227.81  name: Integrand_Asurance_Mayaguez
+
+ - 172.31.227.85  name: Joyeria Riviera San Patricio
+
+ - 172.31.227.93  name: Imprenta Cartagena Voice
+
+ - 172.31.227.97

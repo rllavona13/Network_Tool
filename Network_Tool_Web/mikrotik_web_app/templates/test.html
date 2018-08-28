@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#mikrotik {
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%
+}
+
+#mikrotik td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#mikrotik tr:nth-child(even){background-color: #f2f2f2;}
+
+#mikrotik tr:hover {background-color: #ddd;}
+
+#mikrotik  th {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 85%;
+    text-align: left;
+    background-color: gray;
+    color: white;
+}
+
+footer {
+
+    color: black;
+    font-family: arial;
+    font-size: 85%;
+    text-align: left;
+    }
+
+
+</style>
+</head>
+<body>
+
+<table id="mikrotik">
+  <tr>
+    <th>MikroTik Name:</th>
+    <th>IP Address:</th>
+    <th>Scan Date:</th>
+  </tr>
+
+
+  <tr>
+    <td> {{ ip_address }} </td>
+    <td>{{ mk_name }}</td>
+    <td>{{ scan_date }}</td>
+  </tr>
+
+</table>
+
+
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <button onclick="goBack()">Back To Home</button>
+
+      <script>
+              function goBack() {
+                 window.history.back();
+                                 }
+      </script>
+
+     <footer>By Ramon Rivera Llavona - NEO Data</footer>
+
+</body>
+</html>

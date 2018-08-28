@@ -12,14 +12,15 @@ def get_data():
                                   host='localhost',
                                   database='test')
     cursor = cnx.cursor()
-
     query = "SELECT * FROM devices"
 
     cursor.execute(query)
 
     for (name, ip, scanned_date) in cursor:
 
-        return render_template("index.html", data=('%s', '%s', '%s') % (name, ip, scanned_date))
+        data = ('%s', '%s', '%s') % (name, ip, scanned_date)
+
+        return render_template("index.html", data=data)
 
     cursor.close()
     cnx.close()

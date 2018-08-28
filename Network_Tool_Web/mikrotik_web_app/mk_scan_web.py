@@ -1,9 +1,12 @@
+import mysql.connector
+from flask import Flask, render_template, request
+
+
 import paramiko
 import json
 import nmap
 import mysql.connector
 import sys
-from flask import Flask, render_template, request
 
 
 config_file = open('auth.json')
@@ -11,6 +14,24 @@ config = json.load(config_file)
 config_file.close()
 
 app = Flask(__name__)
+
+
+def get_data():
+    pass
+
+
+@app.route('/', methods=['GET', 'POST'])
+def get_scan():
+
+    ip_address = []
+    mk_name = []
+    scan_date = []
+
+    return render_template('index.html')
+
+
+
+
 
 
 """
@@ -78,24 +99,10 @@ class Scanner:
 
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
-
-"""
-
-
-@app.route('/', methods=['GET', 'POST'])
-def get_data():
-
-    if 'scan' in request.form:
-
-        mikrotik_list = []
-
-        return render_template('show_scan.html')
-
-    else:
-        return render_template('index.html')
+                         """
 
 
 if __name__ == '__main__':
+    app.run(port=5000, debug=True)
     # Scanner(host='196.12.186.0/24')
     # Scanner(host=sys.argv[1])
-    app.run(port=5000, debug=True)

@@ -27,10 +27,6 @@ def get_scan():
     return render_template('index.html')
 
 
-
-
-
-
 """
 class Scanner:
 

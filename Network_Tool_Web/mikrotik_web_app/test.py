@@ -1,5 +1,6 @@
 import mysql.connector
 from flask import Flask, render_template
+import sqlalchemy
 
 app = Flask(__name__)
 
@@ -18,9 +19,7 @@ def get_data():
 
     for (name, ip, scanned_date) in cursor:
 
-        data = ('%s', '%s', '%s') % (name, ip, scanned_date)
-
-        return render_template("index.html", data=data)
+        return render_template("index.html", data=(name, ip, scanned_date))
 
     cursor.close()
     cnx.close()

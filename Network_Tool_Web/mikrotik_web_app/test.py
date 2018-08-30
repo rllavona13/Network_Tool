@@ -1,28 +1,29 @@
-import mysql.connector
 from flask import Flask, render_template
-import sqlalchemy
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def get_data():
 
-    cnx = mysql.connector.connect(user='python',
-                                  password='yzh8RB0Bcw1VivO3',
-                                  host='localhost',
-                                  database='test')
-    cursor = cnx.cursor()
-    query = "SELECT * FROM devices"
+    mikrotik_list = []
+    metadata = MetaData()
 
-    cursor.execute(query)
+    engine = create_engine('mysql://python:yzh8RB0Bcw1VivO3@localhost/test')
 
-    for (name, ip, scanned_date) in cursor:
+    connection = engine.connect()
+    sql_data_query = connection.execute('SELECT * FROM devices')
 
-        return render_template("index.html", data=(name, ip, scanned_date))
+    for row in sql_data_query:
 
-    cursor.close()
-    cnx.close()
+        mikrotik_list.append(row)
+
+        return render_template('show_scan.html', mikrotik_list=row)
+
+    metadata.create_all(engine)
 
 
 if __name__ == '__main__':

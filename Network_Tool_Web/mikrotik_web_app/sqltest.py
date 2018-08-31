@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy import MetaData
 
-
 metadata = MetaData()
 
 engine = create_engine('mysql://python:yzh8RB0Bcw1VivO3@localhost/test')

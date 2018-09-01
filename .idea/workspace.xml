@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="new sql test unit">
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/sqltest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/graphs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html" afterDir="false" />
+    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="NEOLog New App for Documentation">
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/__init__.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,6 +120,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="5" />
+          <entry key="md" value="1" />
           <entry key="py" value="6" />
           <entry key="txt" value="4" />
         </counts>
@@ -135,18 +128,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="5" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1163" />
+          <entry key="md" value="1576" />
+          <entry key="py" value="1164" />
+          <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1163" />
+          <entry key="Markdown" value="1576" />
+          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="Python" value="1164" />
         </counts>
       </usages-collector>
     </session>
@@ -168,11 +166,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="300">
+                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -208,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/sipa_allowed_web.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/bulkTest.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/app.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/__init__.py" />
@@ -259,6 +268,7 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/tests.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/README.md" />
       </list>
     </option>
   </component>
@@ -294,13 +304,6 @@
               <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
               <item name="NEOLog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="NEOLog" type="462c0819:PsiDirectoryNode" />
-              <item name="app_tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1221,13 +1224,6 @@
       <option name="presentableId" value="Default" />
       <updated>1531757954945</updated>
     </task>
-    <task id="LOCAL-00003" summary="Edit template">
-      <created>1531758218388</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1531758218388</updated>
-    </task>
     <task id="LOCAL-00004" summary="Delete __COPYTIGHT__">
       <created>1531759254992</created>
       <option name="number" value="00004" />
@@ -1564,7 +1560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535563004429</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="NEOLog New App for Documentation">
+      <created>1535763899988</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1535763899988</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1580,7 +1583,7 @@
     <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19370331" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19318181" />
       <window_info id="DB Browser" order="1" weight="0.20833333" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
@@ -1596,10 +1599,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Debug" order="3" sideWeight="0.49368542" visible="true" weight="0.3180363" />
-      <window_info anchor="right" id="Python Console" order="4" sideWeight="0.49598163" weight="0.5085379" />
-      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.49483353" weight="0.48399147" />
-      <window_info active="true" anchor="right" id="Run" order="6" sideWeight="0.5063146" side_tool="true" visible="true" weight="0.31742424" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.5075885" weight="0.48333332" />
+      <window_info anchor="right" id="Debug" order="4" sideWeight="0.49368542" weight="0.3180363" />
+      <window_info anchor="right" id="Python Console" order="5" sideWeight="0.49598163" weight="0.5085379" />
+      <window_info anchor="right" id="Terminal" order="6" sideWeight="0.49241146" weight="0.48333332" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -1689,12 +1692,10 @@
     <MESSAGE value="New Algorithm for nmap and SSH" />
     <MESSAGE value="New feature, scanned mikrotik, displayed in web browser, using mysql data" />
     <MESSAGE value="new sql test unit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new sql test unit" />
+    <MESSAGE value="NEOLog New App for Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="NEOLog New App for Documentation" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_error.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1998,8 +1999,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

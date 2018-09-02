@@ -10,8 +10,9 @@ config = json.load(config_file)
 config_file.close()
 
 
+@app.route('/')
 def get_home():
-    pass
+    return render_template('home.html')
 
 
 def add_task():
@@ -20,3 +21,8 @@ def add_task():
 
 def main_function():
     pass
+
+
+if __name__ == '__main__':
+
+    app.run(port=5000, debug=True)

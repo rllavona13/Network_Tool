@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="json">
+    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,36 +121,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
+          <entry key="html" value="8" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="13" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="8" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="798" />
           <entry key="json" value="11" />
           <entry key="md" value="1576" />
-          <entry key="py" value="1299" />
-          <entry key="txt" value="60" />
+          <entry key="py" value="1456" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="798" />
           <entry key="JSON" value="11" />
           <entry key="Markdown" value="1576" />
-          <entry key="PLAIN_TEXT" value="60" />
-          <entry key="Python" value="1299" />
+          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="Python" value="1456" />
         </counts>
       </usages-collector>
     </session>
@@ -161,36 +165,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="210">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1535765223742" expanded="true" signature="221:233" ph="..." />
-                <marker date="1535765223742" expanded="true" signature="248:249" ph="..." />
-                <marker date="1535765223742" expanded="true" signature="248:253" ph="..." />
-                <marker date="1535765223742" expanded="true" signature="280:290" ph="..." />
+                <marker date="1535858165183" expanded="true" signature="237:280" ph="..." />
+                <marker date="1535858165183" expanded="true" signature="295:296" ph="..." />
+                <marker date="1535858165183" expanded="true" signature="295:300" ph="..." />
+                <marker date="1535858165183" expanded="true" signature="327:337" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/auth.json">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="371">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="19" />
-              <folding>
-                <element signature="e#58#107#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -266,16 +267,16 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/sqltest.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/login.html" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/graphs.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/index.html" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/neo_log_server.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/sqltest.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/tests.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/README.md" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/auth.json" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" />
       </list>
     </option>
@@ -317,7 +318,21 @@
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="NEOLog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
               <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1128,8 +1143,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.graphtest">
-    <configuration name="block_attackers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="neo_log_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1137,11 +1152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/NEOLog" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1150,81 +1165,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="graphtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/NEOLog/app_tests/graphtest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sqltest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/sqltest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.sqltest" />
-      <item itemvalue="Python.block_attackers" />
-      <item itemvalue="Python.graphtest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.graphtest" />
-        <item itemvalue="Python.sqltest" />
-        <item itemvalue="Python.block_attackers" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.neo_log_server" />
       </list>
     </recent_temporary>
   </component>
@@ -1238,13 +1181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531757954945</updated>
-    </task>
-    <task id="LOCAL-00006" summary="edited">
-      <created>1531760120192</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1531760120192</updated>
     </task>
     <task id="LOCAL-00007" summary="edited">
       <created>1531761648897</created>
@@ -1582,7 +1518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535765109775</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="edits">
+      <created>1535765237140</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1535765237140</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1598,7 +1541,7 @@
     <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19318181" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19318181" />
       <window_info id="DB Browser" order="1" weight="0.20833333" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
@@ -1614,9 +1557,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" sideWeight="0.5075885" weight="0.48333332" />
-      <window_info anchor="right" id="Debug" order="4" sideWeight="0.49368542" weight="0.3180363" />
-      <window_info anchor="right" id="Python Console" order="5" sideWeight="0.49598163" weight="0.5085379" />
+      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.5075885" visible="true" weight="0.37272727" />
+      <window_info anchor="right" id="Python Console" order="4" sideWeight="0.49598163" weight="0.5083333" />
+      <window_info anchor="right" id="Debug" order="5" sideWeight="0.49368542" weight="0.31742424" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.49241146" weight="0.48333332" />
     </layout>
     <layout-to-restore>
@@ -1683,7 +1626,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Delete __COPYTIGHT__" />
     <MESSAGE value="edited" />
     <MESSAGE value="&#10;edited" />
     <MESSAGE value="Added MYSQL Database feature for save IP Address added to the block list" />
@@ -1708,29 +1650,10 @@
     <MESSAGE value="NEOLog New App for Documentation" />
     <MESSAGE value="Readme for NEOLog" />
     <MESSAGE value="json" />
-    <option name="LAST_COMMIT_MESSAGE" value="json" />
+    <MESSAGE value="edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="edits" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/snmp_test/snmp_mod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="73" column="4" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/static/js/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1620" />
@@ -1878,13 +1801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -1951,13 +1867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1966,13 +1875,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/graphs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
@@ -2009,26 +1911,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/werkzeug/serving.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="794" selection-start-line="794" selection-end-line="794" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="947" selection-start-line="947" selection-end-line="947" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="473">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="34" />
           <folding>
             <element signature="e#58#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/tasksview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <marker date="1535765223742" expanded="true" signature="221:233" ph="..." />
-            <marker date="1535765223742" expanded="true" signature="248:249" ph="..." />
-            <marker date="1535765223742" expanded="true" signature="248:253" ph="..." />
-            <marker date="1535765223742" expanded="true" signature="280:290" ph="..." />
+            <marker date="1535858165183" expanded="true" signature="237:280" ph="..." />
+            <marker date="1535858165183" expanded="true" signature="295:296" ph="..." />
+            <marker date="1535858165183" expanded="true" signature="295:300" ph="..." />
+            <marker date="1535858165183" expanded="true" signature="327:337" ph="..." />
           </folding>
         </state>
       </provider>

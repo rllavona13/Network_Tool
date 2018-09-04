@@ -1,15 +1,26 @@
 from sqlalchemy import create_engine
 from sqlalchemy import MetaData
+from flask import Flask, render_template
 
-metadata = MetaData()
+app = Flask(__name__)
 
-engine = create_engine('mysql://python:yzh8RB0Bcw1VivO3@localhost/test')
 
-with engine.connect() as connection:
+@app.route('/')
+def sql_query():
 
-    sql_data_query = connection.execute('SELECT * FROM devices')
+    engine = create_engine('mysql://python:yzh8RB0Bcw1VivO3@localhost/test')
 
-    for row in sql_data_query:
-        print(row)
+    with engine.connect() as connection:
 
-metadata.create_all(engine)
+        sql_data_query = connection.execute('SELECT * FROM devices')
+
+        for row in sql_data_query:
+
+            data = row[1] + row[2]
+
+            return render_template('test.html', data=data)
+
+
+if __name__ == '__main__':
+
+    app.run(debug=True)

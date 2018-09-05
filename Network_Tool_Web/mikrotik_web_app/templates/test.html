@@ -2,7 +2,8 @@
 <html>
 <head>
 <style>
-#mikrotik {
+
+mikrotik {
 
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -10,18 +11,18 @@
     font-size: 80%
 }
 
-#mikrotik td, #customers th {
+mikrotik td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#mikrotik tr:nth-child(even){background-color: #f2f2f2;}
+mikrotik tr:nth-child(even){background-color: #f2f2f2;}
 
-#mikrotik tr:hover {background-color: #ddd;}
+mikrotik tr:hover {background-color: #ddd;}
 
-#mikrotik  th {
+mikrotik  th {
 
-    padding-top: 12px;
+    padding-top: 15px;
     padding-bottom: 12px;
     font-size: 85%;
     text-align: left;
@@ -44,10 +45,11 @@ footer {
 
 <table id="mikrotik">
 
-    {{data}}
+
+    {{ data }}
+
 
 </table>
-
 
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

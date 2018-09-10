@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from sqlalchemy import create_engine
 from sqlalchemy import MetaData
+import MySQLdb
 
 
 app = Flask(__name__)
@@ -9,25 +10,20 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def get_data():
 
-    mikrotik_list = []
-    metadata = MetaData()
+    db = MySQLdb.connect("localhost", "python", "yzh8RB0Bcw1VivO3", "test")
+    cursor = db.cursor()
+    sql_query = 'SELECT * FROM devices'
 
-    engine = create_engine('mysql://python:yzh8RB0Bcw1VivO3@localhost/test')
+    try:
+        cursor.execute(sql_query)
+        results = cursor.fetchall()
+        return render_template('show_scan.html', mikrotik_list=results)
 
-    connection = engine.connect()
-    sql_data_query = connection.execute('SELECT * FROM devices')
-
-    for row in sql_data_query:
-
-        mikrotik_list.append(row)
-
-        return render_template('show_scan.html', mikrotik_list=row)
-
-    metadata.create_all(engine)
+    except:
+        return render_template('show_scan.html', mikrotik_list="Error: Cannot fetch data from Database")
 
 
 if __name__ == '__main__':
 
     app.run(port=5000, debug=True)
-
 

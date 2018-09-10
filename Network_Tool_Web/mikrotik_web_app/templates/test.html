@@ -38,12 +38,26 @@ footer {
     text-align: left;
     }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+table.a {
+    table-layout: auto;
+    width: 180px;
+}
+
+
 </style>
 </head>
 <body>
 
 <table id="mikrotik">
-
 
     {{ data }}
 

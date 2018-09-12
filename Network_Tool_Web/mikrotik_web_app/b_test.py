@@ -1,25 +1,23 @@
-from datetime import datetime
-from FlaskWebProject7 import app
-import pypyodbc
-from datetime import datetime
-from flask import render_template, redirect, request
+from flask import Flask
+from flask_mysqldb import MySQL
 
-# creating connection Object which will contain SQL Server Connection
-connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=Employee;uid=sa;pwd=sA1234')  # Creating Cursor
+app = Flask(__name__)
 
-cursor = connection.cursor()
-cursor.execute("SELECT * FROM EmployeeMaster")
-s = "<table style='border:1px solid red'>"
-for row in cursor:
-    s = s + "<tr>"
-for x in row:
-    s = s + "<td>" + str(x) + "</td>"
-s = s + "</tr>"
+app.config['MYSQL_USER'] = 'python'
+app.config['MYSQL_PASSWORD'] = 'yzh8RB0Bcw1VivO3'
+app.config['MYSQL_DB'] = 'test'
+app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
-connection.close()
+mysql = MySQL(app)
 
 
 @app.route('/')
-@app.route('/home')
-def home():
-    return "<html><body>" + s + "</body></html>"
+def users():
+    cur = mysql.connection.cursor()
+    cur.execute('''SELECT * FROM devices''')
+    rv = cur.fetchall()
+    return str(rv)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

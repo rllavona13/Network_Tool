@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="new sql test unit">
+      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" afterDir="false" />
@@ -36,7 +37,7 @@
           <entry key="Python Console" value="185" />
           <entry key="html" value="738" />
           <entry key="json" value="100" />
-          <entry key="py" value="5247" />
+          <entry key="py" value="5343" />
           <entry key="txt" value="197" />
         </counts>
       </usages-collector>
@@ -45,7 +46,7 @@
           <entry key="HTML" value="738" />
           <entry key="JSON" value="100" />
           <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="5432" />
+          <entry key="Python" value="5528" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,7 +56,7 @@
           <entry key="js" value="1" />
           <entry key="json" value="6" />
           <entry key="mikrotik_list" value="1" />
-          <entry key="py" value="55" />
+          <entry key="py" value="56" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
@@ -66,7 +67,7 @@
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="55" />
+          <entry key="Python" value="56" />
         </counts>
       </usages-collector>
     </session>
@@ -151,16 +152,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
+            <state relative-caret-position="654">
               <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="324">
               <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
             </state>
           </provider>
@@ -178,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -187,11 +188,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -273,6 +274,7 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/sqltest.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" />
       </list>
     </option>
@@ -291,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,18 +312,10 @@
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
               <item name="mikrotik_web_app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
-              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="mikrotik_web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,27 +369,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="block_attackers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="mk_scan_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -408,6 +382,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/mk_scan_web.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="smtp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,17 +456,17 @@
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python.sqltest" />
-      <item itemvalue="Python.block_attackers" />
       <item itemvalue="Python.mk_scan_web" />
       <item itemvalue="Python.b_test" />
+      <item itemvalue="Python.smtp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.smtp" />
         <item itemvalue="Python.b_test" />
         <item itemvalue="Python.sqltest" />
         <item itemvalue="Python.mk_scan_web" />
-        <item itemvalue="Python.block_attackers" />
       </list>
     </recent_temporary>
   </component>
@@ -485,13 +480,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531757954945</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added MYSQL Database feature for save IP Address added to the block list">
-      <created>1531847029325</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1531847029326</updated>
     </task>
     <task id="LOCAL-00012" summary="Added MYSQL Database feature for save IP Address added to the block list">
       <created>1531851253304</created>
@@ -829,7 +817,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536599316462</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="new sql test unit">
+      <created>1536781824729</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1536781824730</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -842,7 +837,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
+    <frame x="-4" y="-4" width="1928" height="1088" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19583778" />
@@ -861,10 +856,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Debug" order="3" sideWeight="0.49194413" weight="0.31696904" />
+      <window_info active="true" anchor="right" id="Debug" order="3" sideWeight="0.49087003" visible="true" weight="0.50747067" />
       <window_info anchor="right" id="Python Console" order="4" sideWeight="0.49516648" weight="0.5085379" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.49409238" weight="0.48399147" />
-      <window_info active="true" anchor="right" id="Run" order="6" sideWeight="0.50805587" side_tool="true" visible="true" weight="0.51013875" />
+      <window_info anchor="right" id="Run" order="6" sideWeight="0.50912994" side_tool="true" weight="0.50800425" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -957,13 +952,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="new sql test unit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1240,15 +1228,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="654">
           <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="270">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,23 +1267,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
         </state>
       </provider>
     </entry>

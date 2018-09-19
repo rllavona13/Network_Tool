@@ -14,11 +14,11 @@ def get_data():
     try:
         cursor.execute(sql_query)
         results = cursor.fetchall()
-        #return render_template('show_scan.html', mikrotik_list=results)
+        # return render_template('show_scan.html', mikrotik_list=results)
         for items in results:
-            list1 = list(items[1:3])
+            sql_list = list(items[1:3])
             # print(list1)
-            return render_template('show_scan.html', mikrotik_list=list1)
+            return render_template('show_scan.html', mikrotik_list=sql_list)
 
     except:
         return render_template('show_scan.html', mikrotik_list="Error: Cannot fetch data from Database")
@@ -28,4 +28,3 @@ if __name__ == '__main__':
 
     #get_data()
     app.run(port=5000, debug=True)
-

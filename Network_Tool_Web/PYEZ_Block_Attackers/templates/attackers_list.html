@@ -19,14 +19,21 @@
 
       h2 {
         color: black;
-        font-family: verdana;
+        font-family: arial;
         font-size: 300%;
         text-align: center;
         }
 
       h3 {
         color: black;
-        font-family: verdana;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      h4 {
+        color: black;
+        font-family: arial;
         font-size: 300%;
         text-align: center;
         }
@@ -52,18 +59,23 @@
 
   <body>
 
-            <h2>Add New IP to Attacker List:</h2>
+            <h2>Add New IP to Attacker-List:</h2>
                 <form action="{{ url_for('block_form') }}" method="POST">
                   <input type="text" class="form-control" placeholder="Enter IP Address to block IP Address:"
                          name="attacker">
                   <input type="submit" name="commit" value="Add IP">
                 </form>
 
-            <h3>Delete IP from Attacker List:</h3>
+            <h3>Delete IP from Attacker-List:</h3>
                 <form action="{{ url_for('block_form') }}" method="POST">
-                  <input type="text" class="form-control" placeholder="Enter IP Address to remove from Attacker List:"
+                  <input type="text" class="form-control" placeholder="Enter IP Address to remove from Attacker-List:"
                          name="a_delete">
                   <input type="submit" name="delete" value="Delete IP">
+                </form>
+
+            <h4>Show Attacker List</h4>
+                <form action="{{ url_for('block_form') }}" method="POST">
+                  <input type="submit" name="show" value="Show Attacker List">
                 </form>
 
     <br>

@@ -11,7 +11,7 @@ topFrame.pack()
 bottomFrame = Frame(form)
 bottomFrame.pack(side=BOTTOM)
 
-label1 = Label(topFrame, text="BLOCK IP ATTACKERS TOOL")
+label1 = Label(topFrame, text="Block Attackers Tool")
 label1.pack(fill=X)
 
 button1 = Button(bottomFrame, text="Block IP")

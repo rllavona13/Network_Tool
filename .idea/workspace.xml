@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="new sql test unit">
-      <change afterPath="$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py" afterDir="false" />
+    <list default="true" id="d88feb4f-c80d-4c47-9148-97860b2b2f84" name="Default" comment="new modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,56 +19,57 @@
     <session id="-1131743548">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="185" />
-          <entry key="html" value="738" />
+          <entry key="html" value="843" />
           <entry key="json" value="100" />
-          <entry key="py" value="5343" />
-          <entry key="txt" value="197" />
+          <entry key="py" value="5375" />
+          <entry key="txt" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="738" />
+          <entry key="HTML" value="843" />
           <entry key="JSON" value="100" />
-          <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="5528" />
+          <entry key="PLAIN_TEXT" value="209" />
+          <entry key="Python" value="5560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="18" />
+          <entry key="html" value="24" />
           <entry key="jpg" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="6" />
           <entry key="mikrotik_list" value="1" />
-          <entry key="py" value="56" />
+          <entry key="py" value="60" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="18" />
+          <entry key="HTML" value="24" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="56" />
+          <entry key="Python" value="60" />
         </counts>
       </usages-collector>
     </session>
@@ -150,51 +152,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/show_scan.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="444">
+              <caret line="38" column="116" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="116" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
+        <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="300">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -205,8 +189,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -241,7 +225,6 @@
         <option value="/usr/lib/python2.7/mkScanner.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/main.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/__init__.py" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyray_API/mkScanner.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh_test.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/auth.json" />
@@ -256,7 +239,6 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/snmpmod.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py" />
-        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/testing.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/tests.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/templates/sipa_allowed.html" />
@@ -276,6 +258,11 @@
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py" />
         <option value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/test.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/login.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html" />
+        <option value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py" />
       </list>
     </option>
   </component>
@@ -293,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,12 +296,20 @@
               <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
               <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
-              <item name="mikrotik_web_app" type="462c0819:PsiDirectoryNode" />
+              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Network_Tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Network_Tool_Web" type="462c0819:PsiDirectoryNode" />
+              <item name="PYEZ_Block_Attackers" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,7 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.tests">
     <configuration name="b_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,7 +363,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mk_scan_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="blockAttackersGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -377,11 +371,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/mk_scan_web.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -411,27 +405,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sqltest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/sqltest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -453,20 +426,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.sqltest" />
-      <item itemvalue="Python.mk_scan_web" />
       <item itemvalue="Python.b_test" />
       <item itemvalue="Python.smtp" />
+      <item itemvalue="Python.blockAttackersGUI" />
+      <item itemvalue="Python.tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.blockAttackersGUI" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.smtp" />
         <item itemvalue="Python.b_test" />
-        <item itemvalue="Python.sqltest" />
-        <item itemvalue="Python.mk_scan_web" />
       </list>
     </recent_temporary>
   </component>
@@ -480,13 +474,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531757954945</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added MYSQL Database feature for save IP Address added to the block list">
-      <created>1531851253304</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1531851253307</updated>
     </task>
     <task id="LOCAL-00013" summary="Simple style edit">
       <created>1531852404243</created>
@@ -824,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536781824730</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="new modules">
+      <created>1537385791224</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1537385791225</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -837,14 +831,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1088" extended-state="7" />
+    <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.19583778" />
       <window_info id="DB Browser" order="1" weight="0.20833333" />
       <window_info id="Structure" order="2" sideWeight="0.5013193" side_tool="true" weight="0.24934107" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32999474" />
-      <window_info id="Version Control" order="4" weight="0.46584845" />
+      <window_info id="Version Control" order="4" weight="0.17502668" />
       <window_info id="TODO" order="5" weight="0.23479189" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -856,10 +850,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Debug" order="3" sideWeight="0.49087003" visible="true" weight="0.50747067" />
+      <window_info active="true" anchor="right" id="Debug" order="3" sideWeight="0.49087003" visible="true" weight="0.34578443" />
       <window_info anchor="right" id="Python Console" order="4" sideWeight="0.49516648" weight="0.5085379" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.49409238" weight="0.48399147" />
-      <window_info anchor="right" id="Run" order="6" sideWeight="0.50912994" side_tool="true" weight="0.50800425" />
+      <window_info anchor="right" id="Run" order="6" sideWeight="0.50912994" side_tool="true" weight="0.50747067" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.19015151" />
@@ -883,6 +877,16 @@
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.4996277" weight="0.5026681" />
       <window_info anchor="right" id="Python Console" order="6" weight="0.32924226" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -949,16 +953,10 @@
     <MESSAGE value="New Algorithm for nmap and SSH" />
     <MESSAGE value="New feature, scanned mikrotik, displayed in web browser, using mysql data" />
     <MESSAGE value="new sql test unit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new sql test unit" />
+    <MESSAGE value="new modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="new modules" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/paramiko_test/ssh.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="192" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/scanner_and_backup/Versions/auth.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1053,9 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Pyez_Sipa_Allowed/config.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1077,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -1143,20 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="7" selection-end-line="61" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="789">
@@ -1164,20 +1138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/Flask_SQLAlchemy-2.3.2.dev20180829-py2.7.egg/flask_sqlalchemy/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1202,9 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/mk_scan_web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -1226,13 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/Test/smtp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1240,23 +1194,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="654">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1267,10 +1208,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/b_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attacker_commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Network_Tool_Web/mikrotik_web_app/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers_GUI/blockAttackersGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/NEOLog/neo_log_server.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/block_attackers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/templates/attackers_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Network_Tool_Web/PYEZ_Block_Attackers/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="38" column="116" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="116" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

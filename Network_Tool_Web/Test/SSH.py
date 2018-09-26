@@ -30,10 +30,16 @@ class Scanner:
 
                     if list_ports[1] == 'open':
                         mk_list = host
+<<<<<<< HEAD
 
                         print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
                         print("")
 
+=======
+
+                        print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
+                        print("")
+>>>>>>> b9dbdf1... New Algorithm for nmap and SSH
                         try:
                             ssh = paramiko.SSHClient()
                             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -44,7 +50,10 @@ class Scanner:
                             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
 
                             print(stdout.read())
+<<<<<<< HEAD
 
+=======
+>>>>>>> b9dbdf1... New Algorithm for nmap and SSH
                             print("==============================================================================")
                             ssh.close()
 
@@ -73,5 +82,9 @@ class Scanner:
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     Scanner(host='172.31.240.0/24')
     # Scanner(host=sys.argv[1])
+=======
+    Scanner(host='172.31.0.0/16')
+>>>>>>> b9dbdf1... New Algorithm for nmap and SSH

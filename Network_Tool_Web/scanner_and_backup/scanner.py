@@ -12,6 +12,7 @@ The idea is use the list of Mikrotik hosts and using SSH or MK API create backup
 import nmap
 import sys
 from pysnmp.entity.rfc3413.oneliner import cmdgen
+import time
 
 
 mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
@@ -40,13 +41,11 @@ def scanner(hosts):
                 # print(host, list_ports)
 
                 if list_ports[1] == 'open':
-                    #  mk_lst = ("This host: %s is a Mikrotik" % host)
-                    mk_lst = host
-                    print(mk_lst)
+                    # mk_lst = ("This host: {} is a Mikrotik", (host))
+                    print(host)
 
 
 if __name__ == '__main__':
-
 
     scanner(hosts='172.31.240.0/24')
     # scanner(sys.argv[1])

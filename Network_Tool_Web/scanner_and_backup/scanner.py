@@ -50,3 +50,32 @@ if __name__ == '__main__':
     scanner(hosts='172.31.240.0/24')
     # scanner(sys.argv[1])
     print("")
+
+
+def scanner(hosts):
+
+    nscan = nmap.PortScanner()
+
+    # hosts = '172.31.240.0/24'
+
+    nscan.scan(hosts=hosts, arguments='-PE')
+
+    for host in nscan.all_hosts():
+
+        for proto in nscan[host].all_protocols():
+
+            lport = list(nscan[host][proto].keys())
+            lport.sort()
+
+            for port in lport:
+                list_ports = (port, nscan[host][proto][port]['state'])
+                # print(host, list_ports)
+
+                if list_ports[1] == 'down':
+                    # mk_lst = ("This host: {} is a Mikrotik", (host))
+                    print(host)
+
+
+if __name__ == '__main__':
+
+    s.enter(60, 1, scanner('10.254.0.154'))

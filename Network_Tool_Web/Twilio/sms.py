@@ -1,5 +1,13 @@
 """
-This script test a device using ICMP, if the host id Down it send a SMS to my phone.
+This script can be used as a notification service
+
+For example:
+    This script use the command ping with 1 count to an Router IP Address.
+    If the ping is successful if will try again every 2 seconds and if fail
+    it will print out that the host is down and will send an SMS to my personal
+    cell phone.
+
+It can be used in any shell command or any other implementation.
 
 """
 
@@ -12,7 +20,7 @@ account_sid = "AC41c1c9e2b0256753ef465b644516ba96"
 auth_token = "7bb235fdb41bed95eec12997994bb6d0"
 client = Client(account_sid, auth_token)
 
-starttime = time.time()
+system_time = time.time()
 
 
 def heartbeat():
@@ -21,9 +29,9 @@ def heartbeat():
 
         try:
 
-            subprocess.check_output(["ping", "-c", "1", "10.240.0.154"])
+            subprocess.check_output(['ping', '-c', '1', '10.240.0.154'])
             time.sleep(2)
-            print('Host is UP! at %s' % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            print('Host is UP! at %s' % datetime.datetime.now().strftime('%m-%d-%Y %H:%M:%S'))
 
         except Exception:
 
@@ -34,7 +42,7 @@ def heartbeat():
                 to="+17873125359",
                 from_="+17873362125",
                 body="Router Stopped Responding Ping.")
-
+            print('')
             print('SMS Send to phone')
             print(message.sid)
             exit()

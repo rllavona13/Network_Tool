@@ -2,7 +2,6 @@ import paramiko
 import json
 import nmap
 import mysql.connector
-import sys
 
 
 config_file = open('auth.json')

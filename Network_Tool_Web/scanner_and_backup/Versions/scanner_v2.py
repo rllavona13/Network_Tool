@@ -76,5 +76,6 @@ class Scanner:
 
 
 if __name__ == '__main__':
+
     Scanner(host='172.31.240.0/24')
     # Scanner(host=sys.argv[1])

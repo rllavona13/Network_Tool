@@ -1,3 +1,4 @@
+import sys
 import paramiko
 import json
 import nmap
@@ -52,9 +53,6 @@ class Scanner:
                             print("==============================================================================")
                             ssh.close()
 
-                            f = open('mikrotik_list.txt', 'a')
-                            f.write(str(str(identity_fixed) + mk_list))
-
                             sql_connector = mysql.connector.connect(user='python',
                                                                     password='yzh8RB0Bcw1VivO3',
                                                                     host='localhost',
@@ -77,5 +75,4 @@ class Scanner:
 
 if __name__ == '__main__':
 
-    Scanner(host='172.31.240.0/24')
-    # Scanner(host=sys.argv[1])
+    Scanner(host=sys.argv[1])

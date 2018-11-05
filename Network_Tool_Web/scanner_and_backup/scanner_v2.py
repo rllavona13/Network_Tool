@@ -31,7 +31,7 @@ class Scanner:
                     if list_ports[1] == 'open':
                         mk_list = host
 
-                        print("IP Address of Mikrotik is %s" % host)  # print the ip which are trying to connect.
+                        print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
                         print("")
 
                         try:
@@ -40,17 +40,11 @@ class Scanner:
                             ssh.connect(hostname=mk_list, username=config['username'], password=config['password'])
                             ssh.invoke_shell()
                             stdin, stdout, stderr = ssh.exec_command('system identity print')
-
                             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
-
-                            # Here we# "cut off" name: from strings. Leaving only the name
                             list_fixed = mk_scanned_host.strip('name:').split('name:')
-
                             identity_fixed = (list_fixed[1])
                             # print(json.dumps(mk_scanned_host, indent=4))
-
                             print(str(identity_fixed))
-                            print("==============================================================================")
                             ssh.close()
 
                             sql_connector = mysql.connector.connect(user='python',
@@ -68,6 +62,9 @@ class Scanner:
                             sql_connector.commit()
                             cursor.close()
                             sql_connector.close()
+                            print("%s successfully added to the Mikrotik Database. " % host)
+                            print('-------------------------------------------------------------')
+                            print('')
 
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
@@ -75,4 +72,5 @@ class Scanner:
 
 if __name__ == '__main__':
 
+    print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
     Scanner(host=sys.argv[1])

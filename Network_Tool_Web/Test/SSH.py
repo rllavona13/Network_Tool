@@ -44,7 +44,6 @@ class Scanner:
                             list_fixed = mk_scanned_host.strip('name:').split('name:')
                             identity_fixed = (list_fixed[1])
                             # print(json.dumps(mk_scanned_host, indent=4))
-                            print(str(identity_fixed))
                             ssh.close()
 
                             sql_connector = mysql.connector.connect(user='python',
@@ -62,6 +61,7 @@ class Scanner:
                             sql_connector.commit()
                             cursor.close()
                             sql_connector.close()
+                            print(str(identity_fixed))
                             print("%s successfully added to the Mikrotik Database. " % host)
                             print('-------------------------------------------------------------')
                             print('')
@@ -73,4 +73,5 @@ class Scanner:
 if __name__ == '__main__':
 
     print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
+    print('')
     Scanner(host=sys.argv[1])

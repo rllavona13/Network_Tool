@@ -46,7 +46,7 @@ class Scanner:
                             # print(json.dumps(mk_scanned_host, indent=4))
                             print(str(identity_fixed))
                             ssh.close()
-
+                            """
                             sql_connector = mysql.connector.connect(user='python',
                                                                     password='yzh8RB0Bcw1VivO3',
                                                                     host='localhost',
@@ -63,14 +63,18 @@ class Scanner:
                             cursor.close()
                             sql_connector.close()
                             print("%s successfully added to the Mikrotik Database. " % host)
+                            """
                             print('-------------------------------------------------------------')
                             print('')
 
                         except Exception as ex:  # print the error and continues with the next ip address
+                            print('-------------------------------------------------------------')
+                            print('')
                             print(ex)
 
 
 if __name__ == '__main__':
 
-    print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
+    print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1] + ' ...Please wait...')
+    print('')
     Scanner(host=sys.argv[1])

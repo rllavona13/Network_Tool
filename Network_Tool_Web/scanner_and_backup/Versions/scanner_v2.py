@@ -31,22 +31,25 @@ class Scanner:
                     if list_ports[1] == 'open':
                         mk_list = host
 
-                        print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
+                        print("%s Is a Mikrotik" % host + ' and is UP')  # print the ip which are trying to connect.
                         print("")
 
-                        try:
+                        try:  # SSH Code for gather Mikrotik's Identity. For MYSQL Database
                             ssh = paramiko.SSHClient()
                             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
                             ssh.connect(hostname=mk_list, username=config['username'], password=config['password'])
                             ssh.invoke_shell()
                             stdin, stdout, stderr = ssh.exec_command('system identity print')
+
                             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
                             list_fixed = mk_scanned_host.strip('name:').split('name:')
                             identity_fixed = (list_fixed[1])
-                            # print(json.dumps(mk_scanned_host, indent=4))
                             print(str(identity_fixed))
+
                             ssh.close()
+
                             """
+                            # MYSQL DATABASE CODE
                             sql_connector = mysql.connector.connect(user='python',
                                                                     password='yzh8RB0Bcw1VivO3',
                                                                     host='localhost',

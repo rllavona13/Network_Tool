@@ -70,6 +70,9 @@ class Scanner:
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
 
+"""
+SELECT EXISTS(SELECT 1 FROM devices WHERE ip='172.31.16.17') meter esto para verificar si un IP existe antes del add.
+"""
 
 if __name__ == '__main__':
 

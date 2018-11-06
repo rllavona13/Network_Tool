@@ -31,7 +31,7 @@ class Scanner:
                     if list_ports[1] == 'open':
                         mk_list = host
 
-                        print('%s Is a Mikrotik' % host + ' and is UP')  # print the ip which are trying to connect.
+                        print('%s is a Mikrotik' % host + ' and is UP')  # print the ip which are trying to connect.
                         print("")
 
                         try:  # SSH Code for gather Mikrotik's Identity. For MYSQL Database

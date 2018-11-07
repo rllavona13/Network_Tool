@@ -5,7 +5,7 @@ import nmap
 import mysql.connector
 
 
-config_file = open('/home/rrivera/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
+config_file = open('/home/yar/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
 config = json.load(config_file)
 config_file.close()
 
@@ -63,12 +63,16 @@ class Scanner:
                             sql_connector.close()
                             print(str(identity_fixed))
                             print("%s successfully added to the Mikrotik Database. " % host)
+
                             print('-------------------------------------------------------------')
                             print('')
 
                         except Exception as ex:  # print the error and continues with the next ip address
                             print(ex)
 
+"""
+SELECT EXISTS(SELECT 1 FROM devices WHERE ip='172.31.16.17') meter esto para verificar si un IP existe antes del add.
+"""
 
 if __name__ == '__main__':
 

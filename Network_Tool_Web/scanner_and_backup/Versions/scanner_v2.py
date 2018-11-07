@@ -5,7 +5,9 @@ import nmap
 import mysql.connector
 
 
-config_file = open('/home/rrivera/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
+config_file = open(
+    '/home/yar/Documents/Python_Projects/Network_Tool/Network_Tool_Web/scanner_and_backup/Versions/auth.json'
+                    )
 config = json.load(config_file)
 config_file.close()
 

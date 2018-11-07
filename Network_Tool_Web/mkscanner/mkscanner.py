@@ -16,7 +16,7 @@ print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
 print('')
 
 for host in nscan.all_hosts():
-    if nscan[host]['tcp'][8291]['state']==u'open':
+    if nscan[host]['tcp'][8291]['state'] == u'open':
         try:
             ssh = paramiko.SSHClient()
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -26,7 +26,6 @@ for host in nscan.all_hosts():
             mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
             list_fixed = mk_scanned_host.strip('name:').split('name:')
             identity_fixed = (list_fixed[1])
-            # print(json.dumps(mk_scanned_host, indent=4))
             ssh.close()
             sql_connector = mysql.connector.connect(user='python',
                                                     password='yzh8RB0Bcw1VivO3',

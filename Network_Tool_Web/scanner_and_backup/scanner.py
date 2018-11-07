@@ -8,74 +8,74 @@ and print the hosts that are Mikrotik.
 The idea is use the list of Mikrotik hosts and using SSH or MK API create backups automatically
 
 """
-
+import paramiko
 import nmap
-import sys
-from pysnmp.entity.rfc3413.oneliner import cmdgen
+import mysql.connector
 import time
+import sys
+import json
+
+config_file = open('auth.json')
+config = json.load(config_file)
+config_file.close()
 
 
-mikrotik_identity = 'iso.3.6.1.2.1.1.5.0'
-mikrotik_version = 'iso.3.6.1.2.1.47.1.1.1.1.2.65536'
-mikrotik_model = 'iso.3.6.1.2.1.1.1.0'
-mikrotik_serial = '1.3.6.1.4.1.14988.1.1.7.3.0'
+hosts = sys.argv[1]
+
+nscan = nmap.PortScanner()
+
+# hosts = '172.31.240.0/24'
+nscan.scan(hosts=hosts, arguments='-Pn -p 8291')
+
+for host in nscan.all_hosts():
+
+    for proto in nscan[host].all_protocols():
+
+        lport = list(nscan[host][proto].keys())
+        lport.sort()
+
+        for port in lport:
+            list_ports = (port, nscan[host][proto][port]['state'])
+
+            if list_ports[1] == 'open':
+
+                print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
+                print("")
 
 
-# scan para identificar Mikrotiks en la red
-def scanner(hosts):
+                try:
+                    ssh = paramiko.SSHClient()
+                    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                    ssh.connect(hostname=host, username=config['username'], password=config['password'])
+                    ssh.invoke_shell()
+                    stdin, stdout, stderr = ssh.exec_command('system identity print')
+                    mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
+                    list_fixed = mk_scanned_host.strip('name:').split('name:')
+                    identity_fixed = (list_fixed[1])
+                    # print(json.dumps(mk_scanned_host, indent=4))
+                    ssh.close()
 
-    nscan = nmap.PortScanner()
+                    sql_connector = mysql.connector.connect(user='python',
+                                                            password='yzh8RB0Bcw1VivO3',
+                                                            host='localhost',
+                                                            database='test')
 
-    # hosts = '172.31.240.0/24'
-    nscan.scan(hosts=hosts, arguments='-Pn -p 8291')
+                    cursor = sql_connector.cursor()
 
-    for host in nscan.all_hosts():
+                    add_mikrotik = ("INSERT INTO devices"
+                                    "(name, ip)"
+                                    "VALUES ('%s', '%s')" % (identity_fixed, host))
 
-        for proto in nscan[host].all_protocols():
+                    cursor.execute(add_mikrotik)
+                    sql_connector.commit()
+                    cursor.close()
+                    sql_connector.close()
+                    print(str(identity_fixed))
+                    print("%s successfully added to the Mikrotik Database. " % host)
 
-            lport = list(nscan[host][proto].keys())
-            lport.sort()
+                    print('-------------------------------------------------------------')
+                    print('')
 
-            for port in lport:
-                list_ports = (port, nscan[host][proto][port]['state'])
-                # print(host, list_ports)
+                except Exception as ex:  # print the error and continues with the next ip address
+                    print(ex)
 
-                if list_ports[1] == 'open':
-                    # mk_lst = ("This host: {} is a Mikrotik", (host))
-                    print(host)
-
-
-if __name__ == '__main__':
-
-    scanner(hosts='172.31.240.0/24')
-    # scanner(sys.argv[1])
-    print("")
-
-
-def scanner(hosts):
-
-    nscan = nmap.PortScanner()
-
-    # hosts = '172.31.240.0/24'
-
-    nscan.scan(hosts=hosts, arguments='-PE')
-
-    for host in nscan.all_hosts():
-
-        for proto in nscan[host].all_protocols():
-
-            lport = list(nscan[host][proto].keys())
-            lport.sort()
-
-            for port in lport:
-                list_ports = (port, nscan[host][proto][port]['state'])
-                # print(host, list_ports)
-
-                if list_ports[1] == 'down':
-                    # mk_lst = ("This host: {} is a Mikrotik", (host))
-                    print(host)
-
-
-if __name__ == '__main__':
-
-    s.enter(60, 1, scanner('10.254.0.154'))

@@ -1,42 +1,42 @@
-import sys
+__AUTHOR__ = 'Ramon Rivera Llavona'
+
 import paramiko
-import json
 import nmap
 import mysql.connector
+import sys
+import json
 
 
-config_file = open('/home/rrivera/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
-config = json.load(config_file)
-config_file.close()
+auth_file = open('auth.json')
+login = json.load(auth_file)
+auth_file.close()
 
+hosts = sys.argv[1]
+nscan = nmap.PortScanner()
+nscan.scan(hosts=hosts, arguments='-Pn -p 8291')
 
+print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
+print('')
 
-def scanner(host):
+for host in nscan.all_hosts():
 
-    host = host
-    nmscanner = nmap.PortScanner()
-    nmscanner.scan(hosts=host, arguments='-Pn -p 8291 --ttl 10 --max-retries 1')
+    for proto in nscan[host].all_protocols():
 
-    for host in self.nmscanner.all_hosts():
+        lport = list(nscan[host][proto].keys())
+        lport.sort()
 
-        for proto in self.nmscanner[host].all_protocols():
+        for port in lport:
+            list_ports = (port, nscan[host][proto][port]['state'])
 
-            lport = list(self.nmscanner[host][proto].keys())
-            lport.sort()
+            if list_ports[1] == 'open':
 
-            for port in lport:
-                list_ports = (port, self.nmscanner[host][proto][port]['state'])
-
-                if list_ports[1] == 'open':
-                    mk_list = host
-
-                    print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
-                    print("")
+                print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
+                print("")
 
                 try:
                     ssh = paramiko.SSHClient()
                     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                    ssh.connect(hostname=mk_list, username=config['username'], password=config['password'])
+                    ssh.connect(hostname=host, username=login['username'], password=login['password'])
                     ssh.invoke_shell()
                     stdin, stdout, stderr = ssh.exec_command('system identity print')
                     mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
@@ -44,6 +44,11 @@ def scanner(host):
                     identity_fixed = (list_fixed[1])
                     # print(json.dumps(mk_scanned_host, indent=4))
                     ssh.close()
+
+                    """
+                    verify_query = ("SELECT EXISTS(SELECT 1 FROM devices WHERE"
+                                    "(ip)".format(host))
+                    """
 
                     sql_connector = mysql.connector.connect(user='python',
                                                             password='yzh8RB0Bcw1VivO3',
@@ -54,23 +59,20 @@ def scanner(host):
 
                     add_mikrotik = ("INSERT INTO devices"
                                     "(name, ip)"
-                                    "VALUES ('%s', '%s')" % (identity_fixed, mk_list))
+                                    "VALUES ('%s', '%s')" % (identity_fixed, host))
 
                     cursor.execute(add_mikrotik)
                     sql_connector.commit()
                     cursor.close()
                     sql_connector.close()
                     print(str(identity_fixed))
-                    print("%s successfully added to the Mikrotik Database. " % host)
+                    print(" %s  successfully added to the Mikrotik Database. " % host)
                     print('-------------------------------------------------------------')
                     print('')
 
                 except Exception as ex:  # print the error and continues with the next ip address
                     print(ex)
 
-
-if __name__ == '__main__':
-
-    print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
-    print('')
-    Scanner(host=sys.argv[1])
+            else:
+                print('No mikrotik found...')
+                exit()

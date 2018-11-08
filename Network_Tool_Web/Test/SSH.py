@@ -1,81 +1,55 @@
-import sys
 import paramiko
-import json
 import nmap
 import mysql.connector
+import sys
+import json
 
+auth_file = open('/home/rrivera/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
+login = json.load(auth_file)
+auth_file.close()
 
-config_file = open('/home/rrivera/Documents/Python_Projects/Network_Tool/Network_Tool_Web/Test/auth.json')
-config = json.load(config_file)
-config_file.close()
+hosts = sys.argv[1]
+nscan = nmap.PortScanner()
+nscan.scan(hosts=hosts, arguments='-Pn -p 8291')
 
+print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
+print('')
 
-class Scanner:
+for host in nscan.all_hosts():
+    if nscan[host]['tcp'][8291]['state'] == u'open':
+        try:
+            ssh = paramiko.SSHClient()
+            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            ssh.connect(hostname=host, username=login['username'], password=login['password'])
+            ssh.invoke_shell()
+            stdin, stdout, stderr = ssh.exec_command('system identity print')
+            mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
+            list_fixed = mk_scanned_host.strip('name:').split('name:')
+            identity_fixed = (list_fixed[1])
+            ssh.close()
+            sql_connector = mysql.connector.connect(user='python',
+                                                    password='yzh8RB0Bcw1VivO3',
+                                                    host='localhost',
+                                                    database='test')
 
-    def __init__(self, host):
+            cursor = sql_connector.cursor()
 
-        self.host = host
-        self.nmscanner = nmap.PortScanner()
-        self.nmscanner.scan(hosts=host, arguments='-Pn -p 8291 --ttl 10 --max-retries 1')
+            add_mikrotik = ("INSERT INTO devices"
+                            "(name, ip)"
+                            "VALUES ('%s', '%s')" % (identity_fixed, host))
 
-        for host in self.nmscanner.all_hosts():
+            cursor.execute(add_mikrotik)
+            sql_connector.commit()
+            cursor.close()
+            sql_connector.close()
+            print(str(identity_fixed))
+            print(" %s  successfully added to the Mikrotik Database. " % host)
+            print('-------------------------------------------------------------')
+            print('')
 
-            for proto in self.nmscanner[host].all_protocols():
+        except Exception as ex:  # print the error and continues with the next ip address
+            print(ex)
 
-                lport = list(self.nmscanner[host][proto].keys())
-                lport.sort()
-
-                for port in lport:
-                    list_ports = (port, self.nmscanner[host][proto][port]['state'])
-
-                    if list_ports[1] == 'open':
-                        mk_list = host
-
-                        print("%s Is a Mikrotik" % host)  # print the ip which are trying to connect.
-                        print("")
-
-                        try:
-                            ssh = paramiko.SSHClient()
-                            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                            ssh.connect(hostname=mk_list, username=config['username'], password=config['password'])
-                            ssh.invoke_shell()
-                            stdin, stdout, stderr = ssh.exec_command('system identity print')
-                            mk_scanned_host = stdout.read()  # saves the output from ssh for MySQL query use
-                            list_fixed = mk_scanned_host.strip('name:').split('name:')
-                            identity_fixed = (list_fixed[1])
-                            # print(json.dumps(mk_scanned_host, indent=4))
-                            ssh.close()
-
-                            sql_connector = mysql.connector.connect(user='python',
-                                                                    password='yzh8RB0Bcw1VivO3',
-                                                                    host='localhost',
-                                                                    database='test')
-
-                            cursor = sql_connector.cursor()
-
-                            add_mikrotik = ("INSERT INTO devices"
-                                            "(name, ip)"
-                                            "VALUES ('%s', '%s')" % (identity_fixed, mk_list))
-
-                            cursor.execute(add_mikrotik)
-                            sql_connector.commit()
-                            cursor.close()
-                            sql_connector.close()
-                            print(str(identity_fixed))
-                            print("%s successfully added to the Mikrotik Database. " % host)
-
-                            print('-------------------------------------------------------------')
-                            print('')
-
-                        except Exception as ex:  # print the error and continues with the next ip address
-                            print(ex)
-
-"""
-SELECT EXISTS(SELECT 1 FROM devices WHERE ip='172.31.16.17') meter esto para verificar si un IP existe antes del add.
-"""
-
-if __name__ == '__main__':
-
-    print('Scanning for Mikrotik Routers, your host/range is: %s' % sys.argv[1])
-    print('')
-    Scanner(host=sys.argv[1])
+    else:
+        print('No mikrotik found...')
+        exit()

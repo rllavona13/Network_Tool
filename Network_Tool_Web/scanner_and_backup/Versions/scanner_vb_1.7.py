@@ -144,17 +144,17 @@ class Scanner:
                                     session.exec_command(basic_backup)
 
                                     print('')
-                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                     print('Please wait... Configuring SNMP Community in the system...')
                                     print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik File System')
                                     print(
                                                 'Please wait... Creating %s' % host +
                                                 '.backup Backup in the Mikrotik File System')
                                     print('')
-                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                     print('Backup successfully created at the File system')
                                     print('')
-                                    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                    print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                     print('Please Wait, Gathering device information...')
                                     print('')
 
@@ -199,17 +199,17 @@ class Scanner:
                                 session.exec_command(basic_backup)
 
                                 print('')
-                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please wait... Configuring SNMP Community in the system...')
                                 print('Please wait... Creating %s' % host + '.rsc Backup in the Mikrotik')
                                 print('Please wait... Creating %s' % host + '.backup Backup in the Mikrotik')
                                 print('Please wait... Creating SNMP Community')
                                 print('Please wait... Adding VPN IP Range into firewall address list')
                                 print('')
-                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Backup successfully created at the File system')
                                 print('')
-                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+                                print('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
                                 print('Please Wait, Gathering device information...')
                                 print('')
 
@@ -320,6 +320,6 @@ class Scanner:
 
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
-    Scanner().mk_scan(host='172.31.240.0/24')
+    Scanner().mk_scan(host='172.31.16.17')
 
     print("")

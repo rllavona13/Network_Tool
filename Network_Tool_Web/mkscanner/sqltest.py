@@ -12,7 +12,7 @@ sql_connector = mysql.connector.connect(user='python',
 
 cursor = sql_connector.cursor()
 
-check_query = 'SELECT "ip" FROM "devices" WHERE ip=172.31.16.17" '
+check_query = "SELECT ip FROM devices" "WHERE" "ip='172.31.16.17' "
 
 cursor.execute(check_query)
 sql_connector.commit()

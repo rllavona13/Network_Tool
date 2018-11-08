@@ -43,7 +43,7 @@ for host in nscan.all_hosts():
             cursor.close()
             sql_connector.close()
             print(str(identity_fixed))
-            print(" %s  successfully added to the Mikrotik Database. " % host)
+            print(" %s  Successfully added to the Mikrotik Database. " % host)
             print('-------------------------------------------------------------')
             print('')
 

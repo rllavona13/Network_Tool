@@ -243,7 +243,7 @@ class Scanner:
 
                                 values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
                                     cmdgen.CommunityData('publ1c'),
-                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_identity)
+                                    cmdgen.UdpTransportTarget((host, 161)), mikrotik_identity)
 
                                 for name, val in varbinds:
                                     device_name = val
@@ -261,7 +261,7 @@ class Scanner:
 
                                 values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
                                     cmdgen.CommunityData('publ1c'),
-                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_version)
+                                    cmdgen.UdpTransportTarget((host, 161)), mikrotik_version)
 
                                 for name, val in varbinds:
                                     device_version = val
@@ -279,14 +279,14 @@ class Scanner:
 
                                 values = errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
                                     cmdgen.CommunityData('publ1c'),
-                                    cmdgen.UdpTransportTarget(((host), 161)), mikrotik_model)
+                                    cmdgen.UdpTransportTarget((host, 161)), mikrotik_model)
 
                                 for name, val in varbinds:
                                     device_model = val
 
-                            identity = str(GetIdentity.device_name)
-                            version = str(GetVersion.device_version)
-                            model = str(GetModel.device_model)
+                            identity = str(Scanner().mk_scan(GetIdentity.device_name))
+                            version = str(GetVersion.val)
+                            model = str(GetModel.val)
                             ip = str(host)
 
                             print('DEVICE INFO:')
@@ -312,14 +312,14 @@ class Scanner:
                             sql_connector.commit()
                             cursor.close()
                             sql_connector.close()
+                            print('')
+                            print('Successfully Added to SQL Database')
 
         except Exception as ex:  # print the error and continues with the next ip address
             print(ex)
 
 
-
 if __name__ == '__main__':
     # Scanner(host=sys.argv[1])
     Scanner().mk_scan(host='172.31.16.17')
-
     print("")

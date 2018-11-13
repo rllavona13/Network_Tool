@@ -17,10 +17,7 @@ class SnmpGet:
 
         errorindication, errorstatus, errorindex, varbinds = snmp_gen.getCmd(
             cmdgen.CommunityData('publ1c'),
-            cmdgen.UdpTransportTarget(((hosts), 161)), oid)
+            cmdgen.UdpTransportTarget(('172.31.16.17', 161)), mikrotik_identity)
 
         for name, val in varbinds:
-            oid = val
-
-
-# SnmpGet(hosts='172.31.240.133', oid=mikrotik_version)
+            print(val)

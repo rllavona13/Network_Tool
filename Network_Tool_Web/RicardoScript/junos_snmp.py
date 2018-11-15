@@ -10,8 +10,8 @@ config_file.close()
 
 csv_file = open('juniper_inventory.csv', 'r+b')
 
-junos_identity = 'iso.3.6.1.2.1.1.5.0'  # Name of the juniper device
-junos_serial_number = 'iso.3.6.1.4.1.2636.3.1.3.0'  # Serial number of the Juniper device
+junos_identity = 'iso.3.6.1.2.1.1.5.0'
+junos_serial_number = 'iso.3.6.1.4.1.2636.3.1.3.0'
 junos_type = 'iso.3.6.1.4.1.2636.3.1.2.0'  # Device type, EX, MX, M10 etc...
 
 
@@ -86,5 +86,4 @@ def save_output():  # function to save output into a CSV
     pd.DataFrame(data, columns=col_titles).to_csv("juniper_inventory.csv", index=False)
 
 
-#  Here i call the functions, i need to call one function and save that in the CSV in different rows
 save_output()

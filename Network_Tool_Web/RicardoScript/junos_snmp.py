@@ -28,7 +28,6 @@ def get_junos_identity():  # pretty much explained.
 
             for name, val in varbinds:
                 juniper_identity = str(val)
-
                 return juniper_identity
 
     except Exception as ex:
@@ -78,11 +77,12 @@ def save_output():  # function to save output into a CSV
     name = get_junos_identity()
     serial = get_junos_serial()
     device_type = get_junos_type()
+    device_ip = ip_list['ip']
 
-    mydevices = [name, serial, device_type]
+    snmp_objects_list = [device_ip, name, serial, device_type]
 
-    col_titles = ('Juniper Identity:',  'Juniper Serial Number:', 'Device Model:')
-    data = pd.np.array(mydevices).reshape((len(mydevices) // 3, 3))
+    col_titles = ('IP Address', 'Juniper Identity:',  'Juniper Serial Number:', 'Device Model:')
+    data = pd.np.array(snmp_objects_list).reshape((len(snmp_objects_list) // 4, 4))
     pd.DataFrame(data, columns=col_titles).to_csv("juniper_inventory.csv", index=False)
 
 

@@ -30,8 +30,8 @@ def get_junos_identity():  # pretty much explained.
                 juniper_identity = str(val)
                 return juniper_identity
 
-    except Exception as ex:
-        print(ex)
+    except Exception as error:
+        print(error)
 
 
 def get_junos_serial():  # pretty much explained
@@ -49,8 +49,8 @@ def get_junos_serial():  # pretty much explained
                 juniper_serial = str(val)
                 return juniper_serial
 
-    except Exception as ex:
-        print(ex)
+    except Exception as error:
+        print(error)
 
 
 def get_junos_type():  # pretty much explained as well.
@@ -79,7 +79,7 @@ def save_output():  # function to save output into a CSV
     device_type = get_junos_type()
     device_ip = ip_list['ip']
 
-    snmp_objects_list = [device_ip, name, serial, device_type]
+    snmp_objects_list = [device_ip[0], name, serial, device_type]
 
     col_titles = ('IP Address', 'Juniper Identity:',  'Juniper Serial Number:', 'Device Model:')
     data = pd.np.array(snmp_objects_list).reshape((len(snmp_objects_list) // 4, 4))

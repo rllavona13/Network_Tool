@@ -1,6 +1,6 @@
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 import json
-import csv
+import pandas as pd
 
 
 # Handle the JSON file to use in the host list.
@@ -28,8 +28,8 @@ def get_junos_identity():  # pretty much explained.
 
             for name, val in varbinds:
                 juniper_identity = str(val)
-                print('')
-                print('Device name: %s' % juniper_identity)
+
+                return juniper_identity
 
     except Exception as ex:
         print(ex)
@@ -48,7 +48,7 @@ def get_junos_serial():  # pretty much explained
 
             for name, val in varbinds:
                 juniper_serial = str(val)
-                print('Serial Number: %s' % juniper_serial)
+                return juniper_serial
 
     except Exception as ex:
         print(ex)
@@ -67,19 +67,24 @@ def get_junos_type():  # pretty much explained as well.
 
             for name, val in varbinds:
                 juniper_type = str(val)
-                print('Device Type: %s' % juniper_type)
-                print('')
+                return juniper_type
 
     except Exception as ex:
         print(ex)
 
-"""
-def save_output(files):  # function to save output into a CSV
 
-    with open('juniper_inventory.csv', 'w') as fp:
-        fp.write(files)
-"""
+def save_output():  # function to save output into a CSV
 
-get_junos_identity()
-get_junos_serial()
-get_junos_type()
+    name = get_junos_identity()
+    serial = get_junos_serial()
+    device_type = get_junos_type()
+
+    mydevices = [name, serial, device_type]
+
+    col_titles = ('Juniper Identity:',  'Juniper Serial Number:', 'Device Model:')
+    data = pd.np.array(mydevices).reshape((len(mydevices) // 3, 3))
+    pd.DataFrame(data, columns=col_titles).to_csv("juniper_inventory.csv", index=False)
+
+
+#  Here i call the functions, i need to call one function and save that in the CSV in different rows
+save_output()

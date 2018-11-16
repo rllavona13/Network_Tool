@@ -28,6 +28,7 @@ def get_junos_identity():  # pretty much explained.
 
             for name, val in varbinds:
                 juniper_identity = str(val)
+                # print('Item NAME Added')
                 return juniper_identity
 
     except Exception as error:
@@ -47,6 +48,7 @@ def get_junos_serial():  # pretty much explained
 
             for name, val in varbinds:
                 juniper_serial = str(val)
+                # print('Item SERIAL NAME Added')
                 return juniper_serial
 
     except Exception as error:
@@ -66,6 +68,7 @@ def get_junos_type():  # pretty much explained as well.
 
             for name, val in varbinds:
                 juniper_type = str(val)
+                # print('Item DEVICE MODEL Added')
                 return juniper_type
 
     except Exception as ex:
@@ -86,4 +89,6 @@ def save_output():  # function to save output into a CSV
     pd.DataFrame(data, columns=col_titles).to_csv("juniper_inventory.csv", index=False)
 
 
-save_output()
+for i in ip_list['ip']:
+    # save_output()
+    print('Adding %s done.' % ip_list['ip'][0])

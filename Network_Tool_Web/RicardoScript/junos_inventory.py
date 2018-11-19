@@ -43,6 +43,7 @@ def get_junos_serial(device_ip):  # pretty much explained
     except Exception as error:
         print(error)
 
+
 def get_junos_type(device_ip):  # pretty much explained as well.
     snmp_gen = cmdgen.CommandGenerator()
     try:

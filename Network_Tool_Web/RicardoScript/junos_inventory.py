@@ -59,13 +59,15 @@ def get_junos_type(device_ip):  # pretty much explained as well.
 
 
 def save_output(device_ip):  # function to save output into a CSV
-    csv_file= 'juniper_inventory.csv'
+
+    csv_file = 'juniper_inventory.csv'
     name = get_junos_identity(device_ip)
     serial = get_junos_serial(device_ip)
     device_type = get_junos_type(device_ip)
     snmp_objects_list = [device_ip, name, serial, device_type]
     col_titles = ('IP Address', 'Juniper Identity',  'Juniper Serial Number', 'Device Model')
     data = pd.np.array(snmp_objects_list).reshape((len(snmp_objects_list) // 4, 4))
+
     if not os.path.isfile(csv_file):
         pd.DataFrame(data, columns=col_titles).to_csv(csv_file,mode='w',index=False)
     else:

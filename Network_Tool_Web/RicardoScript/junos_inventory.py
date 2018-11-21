@@ -13,7 +13,7 @@ config_file.close()
 
 app = Flask(__name__)
 
-#csv_file = open('juniper_inventory.csv', 'r+b')
+# csv_file = open('juniper_inventory.csv', 'r+b')
 
 junos_identity = 'iso.3.6.1.2.1.1.5.0'
 junos_serial_number = 'iso.3.6.1.4.1.2636.3.1.3.0'

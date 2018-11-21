@@ -3,11 +3,14 @@ from pysnmp.entity.rfc3413.oneliner import cmdgen
 import json
 import pandas as pd
 import os
+from flask import Flask, render_template, request
 
 # Handle the JSON file to use in the host list.
 config_file = open('ip_list.json')
 ip_list = json.load(config_file)
 config_file.close()
+
+app = Flask(__name__)
 
 #csv_file = open('juniper_inventory.csv', 'r+b')
 
@@ -16,6 +19,7 @@ junos_serial_number = 'iso.3.6.1.4.1.2636.3.1.3.0'
 junos_type = 'iso.3.6.1.4.1.2636.3.1.2.0'  # Device type, EX, MX, M10 etc...
 
 
+@app.route('/', methods=['GET', 'POST'])
 def get_junos_identity(device_ip):  # pretty much explained.
     snmp_gen = cmdgen.CommandGenerator()
     try:
@@ -77,3 +81,6 @@ def save_output(device_ip):  # function to save output into a CSV
 for i in ip_list['ip']:
     save_output(i)
     print('Adding %s done.' % i)
+
+
+app.run(port=5000, debug=True)

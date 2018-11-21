@@ -4,6 +4,7 @@ import json
 import pandas as pd
 import os
 from flask import Flask, render_template, request
+import mysql.connector
 
 # Handle the JSON file to use in the host list.
 config_file = open('ip_list.json')
@@ -77,10 +78,23 @@ def save_output(device_ip):  # function to save output into a CSV
     else:
         pd.DataFrame(data).to_csv(csv_file,mode='a', index=False, header=False)
 
+    sql_connector = mysql.connector.connect(user='python',
+                                            password='yzh8RB0Bcw1VivO3',
+                                            host='localhost',
+                                            database='juniper_inventory')
+
+    cursor = sql_connector.cursor()
+
+    add_ip = ("INSERT INTO inventory" 
+              "(name, serial, type, ip)" 
+              "VALUES  ('%s', '%s', '%s', '%s')" % (name, serial, device_type, device_ip))
+
+    cursor.execute(add_ip)
+    sql_connector.commit()
+    cursor.close()
+    sql_connector.close()
+
 
 for i in ip_list['ip']:
     save_output(i)
     print('Adding %s done.' % i)
-
-
-app.run(port=5000, debug=True)

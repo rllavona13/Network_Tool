@@ -73,9 +73,9 @@ def save_output(device_ip):  # function to save output into a CSV
     data = pd.np.array(snmp_objects_list).reshape((len(snmp_objects_list) // 4, 4))
 
     if not os.path.isfile(csv_file):
-        pd.DataFrame(data, columns=col_titles).to_csv(csv_file,mode='w',index=False)
+        pd.DataFrame(data, columns=col_titles).to_csv(csv_file, mode='w', index=False)
     else:
-        pd.DataFrame(data).to_csv(csv_file,mode='a',index=False,header=False)
+        pd.DataFrame(data).to_csv(csv_file,mode='a', index=False, header=False)
 
 
 for i in ip_list['ip']:

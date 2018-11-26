@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Python_Projects" />
     <orderEntry type="module" module-name="pyinventory" />
+    <orderEntry type="module" module-name="net_scan" />
   </component>
 </module>

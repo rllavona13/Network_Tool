@@ -6,7 +6,6 @@ from jnpr.junos.utils.config import Config
 import json
 import mysql.connector
 
-
 app = Flask(__name__)
 
 config_file = open('auth.json')
@@ -85,4 +84,15 @@ def block_commit():
 
 if __name__ == '__main__':
 
-    app.run(port=5000, debug=True)
+    app.run()
+
+
+
+d = wsgiserver.WSGIPathInfoDispatcher({'/': app})
+server = wsgiserver.CherryPyWSGIServer(('0.0.0.0', 8080), d)
+
+if __name__ == '__main__':
+   try:
+      server.start()
+   except KeyboardInterrupt:
+      server.stop()

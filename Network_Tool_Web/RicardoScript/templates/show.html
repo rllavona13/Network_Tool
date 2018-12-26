@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Block Attacker IP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ramon Rivera Llavona">
+    <meta charset="utf-8">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('block_form', filename='ico/favicon.ico') }}">
+
+  </head>
+
+  <style>
+
+   h1 {
+     color: black;
+     font-family: verdana;
+     font-size: 300%;
+     text-align: center;
+       }
+
+   body {
+     text-align: center;
+   }
+
+
+  </style>
+
+
+<body>
+    <h1>Juniper Inventory</h1>
+    <pre>
+
+    {{ data }}
+
+    </pre>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <button onclick="goBack()">Back</button>
+
+      <script>
+              function goBack() {
+                 window.history.back();
+                                 }
+      </script>
+
+
+     <footer>By Ramon Rivera Llavona - NEO Data</footer>
+</body>
+</html>

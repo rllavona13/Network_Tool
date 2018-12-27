@@ -1,0 +1,481 @@
+set groups re0 system host-name MX104-2-re0
+set groups re0 interfaces fxp0 unit 0 family inet address 10.255.6.223/24
+set groups re0 interfaces fxp0 unit 0 family inet address 10.255.6.222/24 master-only
+set groups re1 system host-name MX104-2-re1
+set groups re1 interfaces fxp0 unit 0 family inet address 10.255.6.224/24
+set groups re1 interfaces fxp0 unit 0 family inet address 10.255.6.222/24 master-only
+set groups per-interface-arp interfaces <*> unit <*> family inet policer arp per_int_arp
+set groups syslog-server system syslog host <*> any any
+set groups syslog-server system syslog host <*> interactive-commands any
+set groups syslog-server system syslog host <*> match "!(.*Monitor: Route Add Label.*)"
+set groups syslog-server system syslog host <*> source-address 10.255.6.222
+set apply-groups re0
+set apply-groups re1
+set system backup-router 10.255.6.254
+set system time-zone America/Puerto_Rico
+set system authentication-order radius
+set system authentication-order password
+set system root-authentication encrypted-password "$1$YGQ69SVG$rkebQZrdofob2bnemY5r40"
+set system radius-server 196.12.161.18 port 1812
+set system radius-server 196.12.161.18 accounting-port 1813
+set system radius-server 196.12.161.18 secret "$9$d/b2oJZj.PQNd.PTQ/9Ap0O1hW87w2a7-"
+set system radius-server 196.12.161.18 source-address 10.255.6.222
+set system radius-server 196.12.161.19 port 1812
+set system radius-server 196.12.161.19 accounting-port 1813
+set system radius-server 196.12.161.19 secret "$9$d/b2oJZj.PQNd.PTQ/9Ap0O1hW87w2a7-"
+set system radius-server 196.12.161.19 source-address 10.255.6.222
+set system login class super-user-local idle-timeout 10
+set system login class superoperator idle-timeout 16
+set system login class superoperator login-tip
+set system login user admin uid 2010
+set system login user admin class super-user
+set system login user admin authentication encrypted-password "$5$M/c1iXza$fmJpj2Ir/1KfVwo6TQXgOVgcx65qsgYJ7cqVe6O7FuD"
+set system login user r-oper uid 2003
+set system login user r-oper class operator
+set system login user r-superoper uid 2005
+set system login user r-superoper class superoperator
+set system login user r-superuser uid 2004
+set system login user r-superuser class super-user
+set system services ftp
+set system services ssh
+set system services telnet
+set system services netconf ssh
+set system syslog user * any emergency
+set system syslog host 196.12.161.35 apply-groups syslog-server
+set system syslog host 196.12.161.39 apply-groups syslog-server
+set system syslog host 10.255.6.56 apply-groups syslog-server
+set system syslog host 10.255.6.76 apply-groups syslog-server
+set system syslog host 10.255.6.76 port 139
+set system syslog file messages any critical
+set system syslog file messages authorization info
+set system syslog file messages kernel info
+set system syslog file interactive-commands interactive-commands error
+set system syslog file secure authorization info
+set system syslog file secure security any
+set system syslog file ftp ftp any
+set system archival configuration transfer-on-commit
+set system archival configuration archive-sites "ftp://juniper@10.255.6.25/MOP" password "$9$j.kmT69pRhrAtK87NbwmfTzFn"
+set system commit synchronize
+set system ntp server 10.255.6.11
+set system ntp server 10.255.6.12
+set chassis redundancy routing-engine 0 master
+set chassis redundancy routing-engine 1 backup
+set chassis redundancy failover on-loss-of-keepalives
+set chassis redundancy failover on-disk-failure
+set chassis redundancy graceful-switchover
+set chassis aggregated-devices ethernet device-count 6
+set chassis fpc 0 pic 0 tunnel-services bandwidth 10g
+set chassis fpc 1 pic 0 adaptive-services service-package layer-3
+set chassis fpc 1 pic 1 adaptive-services service-package layer-3
+set chassis network-services all-ethernet
+set interfaces xe-1/0/0 description BB1-XE-0/1/0
+set interfaces xe-1/2/0 description Uplink-To-Liberty
+set snmp location "Metro Office Park"
+set snmp contact "Worldnet NOC 787-705-5500"
+set snmp community "c4ct1!" authorization read-only
+set snmp trap-group NMS version v2
+set snmp trap-group NMS categories authentication
+set snmp trap-group NMS categories chassis
+set snmp trap-group NMS categories link
+set snmp trap-group NMS categories remote-operations
+set snmp trap-group NMS categories routing
+set routing-options static route 192.168.253.0/24 next-hop 10.255.6.254
+set routing-options static route 196.12.161.18/32 next-hop 10.255.6.254
+set routing-options static route 196.12.161.19/32 next-hop 10.255.6.254
+set policy-options prefix-list administration-addresses 10.255.6.20/32
+set policy-options prefix-list administration-addresses 10.255.6.24/32
+set policy-options prefix-list administration-addresses 10.255.6.38/32
+set policy-options prefix-list administration-addresses 10.255.6.253/32
+set policy-options prefix-list administration-addresses 70.45.0.0/16
+set policy-options prefix-list administration-addresses 70.45.200.199/32
+set policy-options prefix-list administration-addresses 192.168.0.0/16
+set policy-options prefix-list administration-addresses 192.168.90.17/32
+set policy-options prefix-list administration-addresses 192.168.253.0/24
+set policy-options prefix-list administration-addresses 196.12.161.28/32
+set policy-options prefix-list administration-addresses 196.12.170.52/30
+set policy-options prefix-list radius-servers 196.12.161.18/32
+set policy-options prefix-list radius-servers 196.12.161.19/32
+set policy-options prefix-list snmp-servers 10.255.6.20/32
+set policy-options prefix-list snmp-servers 10.255.6.21/32
+set policy-options prefix-list snmp-servers 10.255.6.24/32
+set policy-options prefix-list snmp-servers 10.255.6.25/32
+set policy-options prefix-list snmp-servers 10.255.6.56/32
+set policy-options prefix-list snmp-servers 10.255.6.57/32
+set policy-options prefix-list snmp-servers 10.255.6.90/32
+set policy-options prefix-list snmp-servers 10.255.6.98/32
+set policy-options prefix-list snmp-servers 192.168.90.22/32
+set policy-options prefix-list snmp-servers 192.168.90.23/32
+set policy-options prefix-list snmp-servers 196.12.161.10/32
+set policy-options prefix-list snmp-servers 196.12.161.52/32
+set policy-options prefix-list snmp-servers 196.12.161.53/32
+set policy-options prefix-list snmp-servers 196.12.161.54/32
+set policy-options prefix-list snmp-servers 196.12.161.56/32
+set policy-options prefix-list ntp-servers 10.240.0.4/32
+set policy-options prefix-list ntp-servers 192.168.90.20/32
+set policy-options prefix-list ntp-servers 192.168.90.21/32
+set policy-options prefix-list ntp-servers 192.168.90.252/32
+set policy-options prefix-list ftp-servers 10.255.6.25/32
+set policy-options prefix-list ftp-servers 192.168.90.25/32
+set policy-options prefix-list ftp-servers 192.168.253.0/24
+set policy-options prefix-list worldnet-addresses 64.89.0.0/20
+set policy-options prefix-list worldnet-addresses 196.12.160.0/19
+set policy-options prefix-list worldnet-addresses 196.12.188.128/29
+set policy-options prefix-list smtp-authorized-clients 196.12.185.27/32
+set policy-options prefix-list smtp-authorized-servers 196.12.161.6/32
+set policy-options prefix-list smtp-authorized-servers 196.12.161.13/32
+set policy-options prefix-list smtp-authorized-servers 196.12.161.14/32
+set policy-options prefix-list smtp-authorized-servers 196.12.161.40/32
+set policy-options prefix-list smtp-authorized-servers 196.12.161.46/32
+set policy-options prefix-list ntp-allowed 64.89.10.160/30
+set policy-options prefix-list ntp-allowed 74.85.156.0/23
+set policy-options prefix-list ntp-allowed 192.254.110.0/24
+set policy-options prefix-list ntp-allowed 196.12.161.0/32
+set policy-options prefix-list ntp-allowed 196.12.161.4/32
+set policy-options prefix-list ntp-allowed 196.12.161.5/32
+set policy-options prefix-list ntp-allowed 196.12.166.0/24
+set policy-options prefix-list ntp-allowed 196.12.188.48/30
+set policy-options prefix-list backbone-addresses 10.255.252.0/24
+set policy-options prefix-list backbone-addresses 172.30.255.0/32
+set policy-options prefix-list backbone-addresses 172.30.255.1/32
+set policy-options prefix-list backbone-addresses 192.168.0.0/16
+set policy-options prefix-list bgp-neighbors 89.221.40.6/32
+set policy-options prefix-list bgp-neighbors 196.12.162.229/32
+set policy-options prefix-list bgp-neighbors 196.12.170.53/32
+set policy-options prefix-list bgp-neighbors 196.12.170.128/30
+set policy-options prefix-list bgp-neighbors 209.91.216.141/32
+set policy-options prefix-list bgp-neighbors-v6 2001:41a8:4080:2::0/126
+set firewall family inet filter protect-RE term remote-adm from source-prefix-list administration-addresses
+set firewall family inet filter protect-RE term remote-adm from protocol tcp
+set firewall family inet filter protect-RE term remote-adm from destination-port snmp
+set firewall family inet filter protect-RE term remote-adm from destination-port telnet
+set firewall family inet filter protect-RE term remote-adm from destination-port ssh
+set firewall family inet filter protect-RE term remote-adm then count tcp-counter
+set firewall family inet filter protect-RE term remote-adm then accept
+set firewall family inet filter protect-RE term snmp from source-prefix-list snmp-servers
+set firewall family inet filter protect-RE term snmp from protocol udp
+set firewall family inet filter protect-RE term snmp from destination-port 161
+set firewall family inet filter protect-RE term snmp then accept
+set firewall family inet filter protect-RE term backbone-bfd from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-bfd from protocol udp
+set firewall family inet filter protect-RE term backbone-bfd from port 3784
+set firewall family inet filter protect-RE term backbone-bfd then accept
+set firewall family inet filter protect-RE term backbone-lsp-ping from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-lsp-ping from protocol tcp
+set firewall family inet filter protect-RE term backbone-lsp-ping from protocol udp
+set firewall family inet filter protect-RE term backbone-lsp-ping from port 3503
+set firewall family inet filter protect-RE term backbone-lsp-ping then accept
+set firewall family inet filter protect-RE term backbone-ldp from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-ldp from protocol udp
+set firewall family inet filter protect-RE term backbone-ldp from protocol tcp
+set firewall family inet filter protect-RE term backbone-ldp from port ldp
+set firewall family inet filter protect-RE term backbone-ldp then accept
+set firewall family inet filter protect-RE term backbone-rsvp from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-rsvp from protocol rsvp
+set firewall family inet filter protect-RE term backbone-rsvp then accept
+set firewall family inet filter protect-RE term backbone-ospf from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-ospf from protocol ospf
+set firewall family inet filter protect-RE term backbone-ospf then accept
+set firewall family inet filter protect-RE term backbone-bgp from source-prefix-list backbone-addresses
+set firewall family inet filter protect-RE term backbone-bgp from protocol tcp
+set firewall family inet filter protect-RE term backbone-bgp from port bgp
+set firewall family inet filter protect-RE term backbone-bgp then accept
+set firewall family inet filter protect-RE term bgp-neighbors from source-prefix-list bgp-neighbors
+set firewall family inet filter protect-RE term bgp-neighbors from protocol tcp
+set firewall family inet filter protect-RE term bgp-neighbors from port bgp
+set firewall family inet filter protect-RE term bgp-neighbors then accept
+set firewall family inet filter protect-RE term sampled from port 6153
+set firewall family inet filter protect-RE term sampled then accept
+set firewall family inet filter protect-RE term radius-servers from source-prefix-list radius-servers
+set firewall family inet filter protect-RE term radius-servers from protocol udp
+set firewall family inet filter protect-RE term worldnet-icmp from icmp-type echo-request
+set firewall family inet filter protect-RE term worldnet-icmp from icmp-type echo-reply
+set firewall family inet filter protect-RE term worldnet-icmp from icmp-type unreachable
+set firewall family inet filter protect-RE term worldnet-icmp from icmp-type time-exceeded
+set firewall family inet filter protect-RE term worldnet-icmp then accept
+set firewall family inet filter protect-RE term traceroute from protocol udp
+set firewall family inet filter protect-RE term traceroute from destination-port 33434-33523
+set firewall family inet filter protect-RE term traceroute then policer icmp-policer
+set firewall family inet filter protect-RE term traceroute then count traceroute-counter
+set firewall family inet filter protect-RE term traceroute then accept
+set firewall family inet filter protect-RE term drop-any then count protectRE-dropany
+set firewall family inet filter protect-RE term drop-any then log
+set firewall family inet filter protect-RE term drop-any then discard
+set firewall family inet filter protect-RE term icmp from protocol icmp
+set firewall family inet filter protect-RE term icmp from icmp-type echo-request
+set firewall family inet filter protect-RE term icmp from icmp-type echo-reply
+set firewall family inet filter protect-RE term icmp from icmp-type unreachable
+set firewall family inet filter protect-RE term icmp from icmp-type time-exceeded
+set firewall family inet filter protect-RE term icmp then policer icmp-policer
+set firewall family inet filter protect-RE term icmp then count icmp-counter
+set firewall family inet filter protect-RE term icmp then accept
+set firewall family inet filter block_ntp term ntp_allow from destination-prefix-list ntp-allowed
+set firewall family inet filter block_ntp term ntp_allow then count ntp_allow_count
+set firewall family inet filter block_ntp term ntp_allow then accept
+set firewall family inet filter block_ntp term ntp from protocol udp
+set firewall family inet filter block_ntp term ntp from destination-port ntp
+set firewall family inet filter block_ntp term ntp then count ntp_block_count
+set firewall family inet filter block_ntp term ntp then reject
+set firewall family inet filter block_ntp term any then accept
+set firewall policer icmp-policer if-exceeding bandwidth-limit 1m
+set firewall policer icmp-policer if-exceeding burst-size-limit 15k
+set firewall policer icmp-policer then discard
+set firewall policer 30000k if-exceeding bandwidth-limit 30m
+set firewall policer 30000k if-exceeding burst-size-limit 100k
+set firewall policer 30000k then discard
+set firewall policer 12000k if-exceeding bandwidth-limit 12m
+set firewall policer 12000k if-exceeding burst-size-limit 100k
+set firewall policer 12000k then discard
+set firewall policer 10000k if-exceeding bandwidth-limit 10m
+set firewall policer 10000k if-exceeding burst-size-limit 100k
+set firewall policer 10000k then discard
+set firewall policer 50000k if-exceeding bandwidth-limit 50m
+set firewall policer 50000k if-exceeding burst-size-limit 100k
+set firewall policer 50000k then discard
+set firewall policer arp_ae0_3 if-exceeding bandwidth-limit 1m
+set firewall policer arp_ae0_3 if-exceeding burst-size-limit 100k
+set firewall policer arp_ae0_3 then discard
+set firewall policer per_int_arp if-exceeding bandwidth-limit 150k
+set firewall policer per_int_arp if-exceeding burst-size-limit 15k
+set firewall policer per_int_arp then discard
+set firewall policer 75m if-exceeding bandwidth-limit 75m
+set firewall policer 75m if-exceeding burst-size-limit 100k
+set firewall policer 75m then discard
+set firewall policer 50m if-exceeding bandwidth-limit 50m
+set firewall policer 50m if-exceeding burst-size-limit 100k
+set firewall policer 50m then discard
+set firewall policer 20000k if-exceeding bandwidth-limit 20m
+set firewall policer 20000k if-exceeding burst-size-limit 100k
+set firewall policer 20000k then discard
+set firewall policer 200000k if-exceeding bandwidth-limit 200m
+set firewall policer 200000k if-exceeding burst-size-limit 100k
+set firewall policer 200000k then discard
+set firewall policer 100000k if-exceeding bandwidth-limit 100m
+set firewall policer 100000k if-exceeding burst-size-limit 100k
+set firewall policer 100000k then discard
+set firewall policer 1000k if-exceeding bandwidth-limit 1m
+set firewall policer 1000k if-exceeding burst-size-limit 100k
+set firewall policer 1000k then discard
+set firewall policer 100k if-exceeding bandwidth-limit 100k
+set firewall policer 100k if-exceeding burst-size-limit 100k
+set firewall policer 100k then discard
+set firewall policer 1024k if-exceeding bandwidth-limit 1024000
+set firewall policer 1024k if-exceeding burst-size-limit 100k
+set firewall policer 1024k then discard
+set firewall policer 10Mbps if-exceeding bandwidth-limit 10m
+set firewall policer 10Mbps if-exceeding burst-size-limit 15k
+set firewall policer 10Mbps then discard
+set firewall policer 110000k if-exceeding bandwidth-limit 150m
+set firewall policer 110000k if-exceeding burst-size-limit 150k
+set firewall policer 110000k then discard
+set firewall policer 1112k if-exceeding bandwidth-limit 1112000
+set firewall policer 1112k if-exceeding burst-size-limit 100k
+set firewall policer 1112k then discard
+set firewall policer 1156k if-exceeding bandwidth-limit 1156000
+set firewall policer 1156k if-exceeding burst-size-limit 100k
+set firewall policer 1156k then discard
+set firewall policer 1200k if-exceeding bandwidth-limit 1200000
+set firewall policer 1200k if-exceeding burst-size-limit 100k
+set firewall policer 1200k then discard
+set firewall policer 1280k if-exceeding bandwidth-limit 1280000
+set firewall policer 1280k if-exceeding burst-size-limit 100k
+set firewall policer 1280k then discard
+set firewall policer 128k if-exceeding bandwidth-limit 128k
+set firewall policer 128k if-exceeding burst-size-limit 100k
+set firewall policer 128k then discard
+set firewall policer 13000k if-exceeding bandwidth-limit 13m
+set firewall policer 13000k if-exceeding burst-size-limit 100k
+set firewall policer 13000k then discard
+set firewall policer 1408k if-exceeding bandwidth-limit 1408000
+set firewall policer 1408k if-exceeding burst-size-limit 100k
+set firewall policer 1408k then discard
+set firewall policer 150000k if-exceeding bandwidth-limit 150m
+set firewall policer 150000k if-exceeding burst-size-limit 150k
+set firewall policer 150000k then discard
+set firewall policer 15000k if-exceeding bandwidth-limit 15m
+set firewall policer 15000k if-exceeding burst-size-limit 100k
+set firewall policer 15000k then discard
+set firewall policer 1504k if-exceeding bandwidth-limit 1504000
+set firewall policer 1504k if-exceeding burst-size-limit 100k
+set firewall policer 1504k then discard
+set firewall policer 1536k if-exceeding bandwidth-limit 1536000
+set firewall policer 1536k if-exceeding burst-size-limit 100k
+set firewall policer 1536k then discard
+set firewall policer 2000k if-exceeding bandwidth-limit 2m
+set firewall policer 2000k if-exceeding burst-size-limit 100k
+set firewall policer 2000k then discard
+set firewall policer 200k if-exceeding bandwidth-limit 200k
+set firewall policer 200k if-exceeding burst-size-limit 100k
+set firewall policer 200k then discard
+set firewall policer 2048k if-exceeding bandwidth-limit 2048000
+set firewall policer 2048k if-exceeding burst-size-limit 100k
+set firewall policer 2048k then discard
+set firewall policer 25000k if-exceeding bandwidth-limit 25m
+set firewall policer 25000k if-exceeding burst-size-limit 100k
+set firewall policer 25000k then discard
+set firewall policer 256k if-exceeding bandwidth-limit 256k
+set firewall policer 256k if-exceeding burst-size-limit 100k
+set firewall policer 256k then discard
+set firewall policer 26000k if-exceeding bandwidth-limit 26m
+set firewall policer 26000k if-exceeding burst-size-limit 100k
+set firewall policer 26000k then discard
+set firewall policer 3000k if-exceeding bandwidth-limit 3m
+set firewall policer 3000k if-exceeding burst-size-limit 100k
+set firewall policer 3000k then discard
+set firewall policer 300k if-exceeding bandwidth-limit 300k
+set firewall policer 300k if-exceeding burst-size-limit 100k
+set firewall policer 300k then discard
+set firewall policer 3072k if-exceeding bandwidth-limit 3072000
+set firewall policer 3072k if-exceeding burst-size-limit 100k
+set firewall policer 3072k then discard
+set firewall policer 33000k if-exceeding bandwidth-limit 33m
+set firewall policer 33000k if-exceeding burst-size-limit 100k
+set firewall policer 33000k then discard
+set firewall policer 384k if-exceeding bandwidth-limit 384k
+set firewall policer 384k if-exceeding burst-size-limit 100k
+set firewall policer 384k then discard
+set firewall policer 4096k if-exceeding bandwidth-limit 4096000
+set firewall policer 4096k if-exceeding burst-size-limit 100k
+set firewall policer 4096k then discard
+set firewall policer 4608k if-exceeding bandwidth-limit 4608000
+set firewall policer 4608k if-exceeding burst-size-limit 100k
+set firewall policer 4608k then discard
+set firewall policer 5000k if-exceeding bandwidth-limit 5m
+set firewall policer 5000k if-exceeding burst-size-limit 100k
+set firewall policer 5000k then discard
+set firewall policer 512k if-exceeding bandwidth-limit 512k
+set firewall policer 512k if-exceeding burst-size-limit 100k
+set firewall policer 512k then discard
+set firewall policer 6000k if-exceeding bandwidth-limit 6m
+set firewall policer 6000k if-exceeding burst-size-limit 100k
+set firewall policer 6000k then discard
+set firewall policer 6144k if-exceeding bandwidth-limit 6144000
+set firewall policer 6144k if-exceeding burst-size-limit 100k
+set firewall policer 6144k then discard
+set firewall policer 768k if-exceeding bandwidth-limit 768k
+set firewall policer 768k if-exceeding burst-size-limit 100k
+set firewall policer 768k then discard
+set firewall policer 8000k if-exceeding bandwidth-limit 8m
+set firewall policer 8000k if-exceeding burst-size-limit 1536000
+set firewall policer 8000k then discard
+set firewall policer 8192k if-exceeding bandwidth-limit 8192000
+set firewall policer 8192k if-exceeding burst-size-limit 100k
+set firewall policer 8192k then discard
+set firewall policer arp_mpls if-exceeding bandwidth-limit 1m
+set firewall policer arp_mpls if-exceeding burst-size-limit 100k
+set firewall policer arp_mpls then discard
+set firewall policer fr-class-ef if-exceeding bandwidth-percent 1
+set firewall policer fr-class-ef if-exceeding burst-size-limit 1500
+set firewall policer fr-class-ef then loss-priority low
+set firewall policer fr-class-ef then forwarding-class expedited-forwarding
+set firewall policer ubr-1024k if-exceeding bandwidth-limit 1024000
+set firewall policer ubr-1024k if-exceeding burst-size-limit 100k
+set firewall policer ubr-1024k then discard
+set firewall policer ubr-1536k if-exceeding bandwidth-limit 1536000
+set firewall policer ubr-1536k if-exceeding burst-size-limit 155k
+set firewall policer ubr-1536k then discard
+set firewall policer ubr-512k if-exceeding bandwidth-limit 512k
+set firewall policer ubr-512k if-exceeding burst-size-limit 100k
+set firewall policer ubr-512k then discard
+set firewall policer ubr-768k if-exceeding bandwidth-limit 768k
+set firewall policer ubr-768k if-exceeding burst-size-limit 100k
+set firewall policer ubr-768k then discard
+set firewall policer 152000k if-exceeding bandwidth-limit 152m
+set firewall policer 152000k if-exceeding burst-size-limit 152k
+set firewall policer 152000k then discard
+set firewall filter 30000k interface-specific
+set firewall filter 30000k term policer then policer 30000k
+set firewall filter 12000k interface-specific
+set firewall filter 12000k term policer then policer 12000k
+set firewall filter 10000k interface-specific
+set firewall filter 10000k term policer then policer 10000k
+set firewall filter 50000k interface-specific
+set firewall filter 50000k term policer then policer 50000k
+set firewall filter 20000k interface-specific
+set firewall filter 20000k term policer then policer 20000k
+set firewall filter 100000k interface-specific
+set firewall filter 100000k term policer then policer 100000k
+set firewall filter 1000k interface-specific
+set firewall filter 1000k term policer then policer 1000k
+set firewall filter 1024k interface-specific
+set firewall filter 1024k term policer then policer 1024k
+set firewall filter 110000k interface-specific
+set firewall filter 110000k term policer then policer 110000k
+set firewall filter 1112k interface-specific
+set firewall filter 1112k term policer then policer 1112k
+set firewall filter 1156k interface-specific
+set firewall filter 1156k term policer then policer 1156k
+set firewall filter 1200k interface-specific
+set firewall filter 1200k term policer then policer 1200k
+set firewall filter 1280k interface-specific
+set firewall filter 1280k term policer then policer 1280k
+set firewall filter 128k interface-specific
+set firewall filter 128k term policer then policer 128k
+set firewall filter 13000k interface-specific
+set firewall filter 13000k term policer then policer 13000k
+set firewall filter 1408k interface-specific
+set firewall filter 1408k term policer then policer 1408k
+set firewall filter 150000k interface-specific
+set firewall filter 150000k term policer then policer 150000k
+set firewall filter 15000k interface-specific
+set firewall filter 15000k term policer then policer 15000k
+set firewall filter 1504k interface-specific
+set firewall filter 1504k term policer then policer 1504k
+set firewall filter 1536k interface-specific
+set firewall filter 1536k term policer then policer 1536k
+set firewall filter 200000k interface-specific
+set firewall filter 200000k term policer then policer 200000k
+set firewall filter 2000k interface-specific
+set firewall filter 2000k term policer then policer 2000k
+set firewall filter 200k interface-specific
+set firewall filter 200k term policer then policer 200k
+set firewall filter 2048k interface-specific
+set firewall filter 2048k term policer then policer 2048k
+set firewall filter 25000k interface-specific
+set firewall filter 25000k term policer then policer 25000k
+set firewall filter 256k interface-specific
+set firewall filter 256k term policer then policer 256k
+set firewall filter 26000k interface-specific
+set firewall filter 26000k term policer then policer 26000k
+set firewall filter 3000k interface-specific
+set firewall filter 3000k term policer then policer 3000k
+set firewall filter 300k interface-specific
+set firewall filter 300k term policer then policer 300k
+set firewall filter 3072k interface-specific
+set firewall filter 3072k term policer then policer 3072k
+set firewall filter 33000k interface-specific
+set firewall filter 33000k term policer then policer 33000k
+set firewall filter 384k interface-specific
+set firewall filter 384k term policer then policer 384k
+set firewall filter 4096k interface-specific
+set firewall filter 4096k term policer then policer 4096k
+set firewall filter 4608k interface-specific
+set firewall filter 4608k term policer then policer 4608k
+set firewall filter 5000k interface-specific
+set firewall filter 5000k term policer then policer 5000k
+set firewall filter 512k interface-specific
+set firewall filter 512k term policer then policer 512k
+set firewall filter 6000k interface-specific
+set firewall filter 6000k term policer then policer 6000k
+set firewall filter 6144k interface-specific
+set firewall filter 6144k term policer then policer 6144k
+set firewall filter 768k interface-specific
+set firewall filter 768k term policer then policer 768k
+set firewall filter 8000k interface-specific
+set firewall filter 8000k term policer then policer 8000k
+set firewall filter 8192k interface-specific
+set firewall filter 8192k term policer then policer 8192k
+set firewall filter pppoeradius term 1 from protocol udp
+set firewall filter pppoeradius term 1 from port 1645
+set firewall filter pppoeradius term 1 then port-mirror
+set firewall filter pppoeradius term 1 then accept
+set firewall filter pppoeradius term 2 then accept
+set firewall filter ubr-1024k interface-specific
+set firewall filter ubr-1024k term policer then policer ubr-1024k
+set firewall filter ubr-512k interface-specific
+set firewall filter ubr-512k term policer then policer ubr-512k
+set firewall filter ubr-768k interface-specific
+set firewall filter ubr-768k term policer then policer ubr-768k
+set firewall filter radius term 1 from protocol udp
+set firewall filter radius term 1 from port 1812
+set firewall filter radius term 1 then accept
+set firewall filter 152000k term policer then policer 152000k

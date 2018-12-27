@@ -1,0 +1,31 @@
+set groups syslog-server system syslog host <*> any any
+set groups syslog-server system syslog host <*> interactive-commands any
+set groups syslog-server system syslog host <*> source-address 10.255.8.250
+set system syslog user * any emergency
+set system syslog host 10.255.8.250 apply-groups syslog-server
+set system syslog file messages any critical
+set system syslog file interactive-commands interactive-commands error
+set system syslog file secure authorization info
+set system syslog file secure security any
+set system syslog file ftp ftp any
+set system syslog file command interactive-commands any
+set system ntp server 196.12.161.4 version 4
+set system ntp server 196.12.161.5 version 4
+set system ntp server 10.255.6.11 version 4
+set system ntp server 10.255.6.12 version 4
+set system ntp source-address 10.255.8.250
+set interfaces ae0 unit 1119 family inet filter input block-ntp
+set interfaces ae0 unit 1119 family inet filter output block-ntp
+set policy-options prefix-list ntp-servers 10.255.6.11/32
+set policy-options prefix-list ntp-servers 10.255.6.12/32
+set policy-options prefix-list ntp-servers 196.12.161.4/32
+set policy-options prefix-list ntp-servers 196.12.161.5/32
+set firewall family inet filter protect-re term ntp-servers from source-prefix-list ntp-servers
+set firewall family inet filter protect-re term ntp-servers from protocol udp
+set firewall family inet filter protect-re term ntp-servers from port ntp
+set firewall family inet filter protect-re term ntp-servers then accept
+set firewall filter block-ntp term ntp from protocol udp
+set firewall filter block-ntp term ntp from port ntp
+set firewall filter block-ntp term ntp then count block-ntp
+set firewall filter block-ntp term ntp then discard
+set firewall filter block-ntp term default then accept

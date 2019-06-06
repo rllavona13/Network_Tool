@@ -23,10 +23,11 @@ def config_backup():
 
             file_name = dev.facts['fqdn']
             f = open(file_name, 'w')
-            f.write(etree.tostring(data))
+            f.write(str(etree.tostring(data)))
             f.close()
 
-            local_file_path = str('/home/rrivera/Backup_Script/' + dev.facts['fqdn'])
+            local_file_path = ('//Users/rllavona/PycharmProjects/Network_Tool/Network_Tool/'
+                               'jnpr/Backup_Script/' + dev.facts['fqdn'])
             remote_file_path = '/home/rrivera/backups/'
 
             ssh = paramiko.SSHClient()
@@ -37,7 +38,6 @@ def config_backup():
             print('Subiendo file al server...')
             scp.put(local_file_path, remote_file_path)
             scp.close()
-            print('Upload Terminado')
             ssh.close()
             print('Peace OUT!')
 

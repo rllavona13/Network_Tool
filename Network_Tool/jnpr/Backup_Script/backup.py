@@ -31,7 +31,7 @@ def config_backup():
 
             ssh = paramiko.SSHClient()
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            ssh.connect(hostname='10.255.6.38', username='rrivera', password=config['emailp'])
+            ssh.connect(hostname='10.255.6.38', username='rrivera', password=config['password'])
 
             scp = SCPClient(ssh.get_transport())
             print('Subiendo file al server...')

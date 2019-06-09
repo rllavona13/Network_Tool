@@ -5,7 +5,6 @@ import logging
 import paramiko
 from scp import SCPClient
 
-# Backup en batch, IP's en el JSON.
 config_file = open('config.json')
 config = json.load(config_file)
 config_file.close()
@@ -26,7 +25,12 @@ def config_backup():
             f.write(str(etree.tostring(data)))
             f.close()
 
-            local_file_path = ('//Users/rllavona/PycharmProjects/Network_Tool/Network_Tool/'
+
+            """
+            
+            ######################################################################################
+            ENABLE IF YOUR ARE RUNNING THIS SCRIPT REMOTELEY
+            local_file_path = ('/Users/rllavona/PycharmProjects/Network_Tool/Network_Tool/'
                                'jnpr/Backup_Script/' + dev.facts['fqdn'])
             remote_file_path = '/home/rrivera/backups/'
 
@@ -39,7 +43,10 @@ def config_backup():
             scp.put(local_file_path, remote_file_path)
             scp.close()
             ssh.close()
-            print('Peace OUT!')
+            #######################################################################################
+                        
+
+            """
 
         except Exception as ex:
             print("Error on %s : %s " % (host, ex))

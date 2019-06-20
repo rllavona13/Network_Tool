@@ -1,19 +1,35 @@
-from napalm_ros import ros
 import napalm
-import napalm_ros
+from pprint import pprint
+import json
 
+router_ip = '196.12.180.5'
 
-router_ip = '192.168.1.1'
-router_port = 8728 # Use 8729 for api-ssl
-router_user = 'rrivera'
-router_pass = 'R4ym0nd12@'
+auth_file = open('auth.json')
+login = json.load(auth_file)
+auth_file.close()
 
 driver = napalm.get_network_driver('ROS')
 
-print('Connecting to', router_ip, "on port", router_port, "as", router_user)
+host = router_ip
+user = login['username']
+password = login['password']
 
-device = driver(hostname=router_ip, username=router_user,
-                password=router_pass, optional_args={'port': router_port})
+def mik_con(host, user, password, port=8729):
 
-print('Opening ...')
-device.open()
+
+    device = driver(hostname=host, username=user,
+                    password=password, optional_args={'port': port})
+    print('Opening ...')
+    device.open()
+    print('Connecting to', host, "on port", port, "as", user)
+    print('')
+
+    ipAddress = str(device.get_interfaces_ip()['vlan0024']['ipv4'])
+    ipAddressFix = (ipAddress.strip("{ ' } ' : ': {'prefix_length': 30"))
+
+    print(ipAddressFix)
+
+    device.close()
+
+
+mik_con(host=router_ip, user=login['username'], password=login['password'])

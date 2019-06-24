@@ -17,7 +17,7 @@ def facts():
             dev.close()
 
     except Exception as ex:
-        print "Error on %s : %s " % (host, ex)
+        print("Error on %s : %s " % (host, ex))
 
 
 if __name__ == '__main__':

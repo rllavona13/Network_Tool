@@ -12,7 +12,7 @@ def port_status():
 
     for host in config['hosts']:
         try:
-            dev = Device(user=config['user'], password=config['pass'], host=host, port='2')
+            dev = Device(user=config['user'], password=config['pass'], host=host, port='22')
             dev.open()
             ports = phyport.PhyPortTable(dev).get()
             print('-' * 65)

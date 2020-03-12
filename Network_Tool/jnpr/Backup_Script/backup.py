@@ -25,11 +25,6 @@ def config_backup():
             f.write(str(etree.tostring(data)))
             f.close()
 
-
-            """
-            
-            ######################################################################################
-            ENABLE IF YOUR ARE RUNNING THIS SCRIPT REMOTELEY
             local_file_path = ('/Users/rllavona/PycharmProjects/Network_Tool/Network_Tool/'
                                'jnpr/Backup_Script/' + dev.facts['fqdn'])
             remote_file_path = '/home/rrivera/backups/'
@@ -43,16 +38,32 @@ def config_backup():
             scp.put(local_file_path, remote_file_path)
             scp.close()
             ssh.close()
-            #######################################################################################
-                        
-
-            """
 
         except Exception as ex:
             print("Error on %s : %s " % (host, ex))
 
         logging.basicConfig(filename="junos_backup_error.log", level=logging.ERROR)
 
+def send_cmd():
+    
+    client1 = paramiko.SSHClient()
+
+    client1.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+    client1.connect(IP, username=username, password=password)
+
+    configure = client1.invoke_shell()
+
+    configure.send('configure')
+
+    configure.send('set interfaces ge-0/0/10 description "test"')
+
+    configure.send('show | compare')
+
+    print
+    configure.recv(1000)
+
+    client1.close()
 
 if __name__ == '__main__':
     config_backup()

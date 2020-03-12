@@ -1,0 +1,4 @@
+mysql-connector==2.2.9
+netaddr==0.7.19
+
+

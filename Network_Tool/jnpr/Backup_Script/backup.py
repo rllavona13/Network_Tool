@@ -43,7 +43,7 @@ def config_backup():
             print("Error on %s : %s " % (host, ex))
 
         logging.basicConfig(filename="junos_backup_error.log", level=logging.ERROR)
-
+""" 
 def send_cmd():
     
     client1 = paramiko.SSHClient()
@@ -64,6 +64,6 @@ def send_cmd():
     configure.recv(1000)
 
     client1.close()
-
+"""
 if __name__ == '__main__':
     config_backup()

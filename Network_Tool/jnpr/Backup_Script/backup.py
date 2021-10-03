@@ -5,8 +5,9 @@ import logging
 import paramiko
 from scp import SCPClient
 
-config_file = open('config.json')
-config = json.load(config_file)
+
+config = open('config.json')
+config_file = json.load(config)
 config_file.close()
 
 

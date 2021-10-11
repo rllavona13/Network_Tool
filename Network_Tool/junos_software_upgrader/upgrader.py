@@ -4,7 +4,6 @@
 Script by Ramon Rivera
 
 """
-
 from jnpr.junos import Device
 from jnpr.junos.utils.sw import SW
 

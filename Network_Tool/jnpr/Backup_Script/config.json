@@ -1,12 +1,12 @@
 {
-  "password" : "R4ym0nd12@",
-  "username" : "rrivera",
-  "user": "script_bot",
-  "pass": "m$Mwk)6P5u",
+  "password" : "password1",
+  "username" : "user1",
+  "user": "user2",
+  "pass": "password2,
   "hosts": [
-             "10.255.6.37",
-             "10.255.6.136",
-            "10.255.6.222",
+              "10.255.6.37",
+              "10.255.6.136",
+              "10.255.6.222",
               "10.255.6.251 ",
               "10.255.6.241 ",
               "10.255.6.248 "

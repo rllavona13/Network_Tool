@@ -1,3 +1,5 @@
+# This script using SNMP to get facts from Fortinet Firewalls
+
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 import time
 

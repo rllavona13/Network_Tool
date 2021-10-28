@@ -2,7 +2,7 @@
   "password" : "password1",
   "username" : "user1",
   "user": "user2",
-  "pass": "password2,
+  "pass": "password2",
   "hosts": [
               "10.255.6.37",
               "10.255.6.136",

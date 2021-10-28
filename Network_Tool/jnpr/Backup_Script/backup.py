@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # this script uses Juniper NETCONF in order to backup Juniper devices configuration.
 # Using Paramiko SCP module to upload the configurations files to a file server
 # It can backup from any Juniper Devices specified in the JSON File

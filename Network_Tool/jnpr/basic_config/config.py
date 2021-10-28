@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+# another script to configure Juniper devices
+
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
 import json

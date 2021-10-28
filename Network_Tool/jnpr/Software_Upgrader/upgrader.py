@@ -1,5 +1,5 @@
 """
-Script to upgrade Juniper devices
+Script to upgrade software firmware to Juniper devices
 Script By Ramon Rivera
 
 """
